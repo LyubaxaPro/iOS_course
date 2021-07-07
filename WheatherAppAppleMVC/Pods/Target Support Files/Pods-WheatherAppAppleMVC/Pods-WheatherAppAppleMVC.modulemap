@@ -1,0 +1,6 @@
+framework module Pods_WheatherAppAppleMVC {
+  umbrella header "Pods-WheatherAppAppleMVC-umbrella.h"
+
+  export *
+  module * { export * }
+}
