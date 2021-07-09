@@ -7,6 +7,7 @@ struct CitiesResponse: Decodable {
 struct CityResponse: Decodable {
     let name: String
     let id: Int
+    let weather: [CityWeatherInfo]
     let main: CityMainInfo
     let sys: CitySysInfo
 }
@@ -23,5 +24,10 @@ struct CityMainInfo: Decodable {
 
 struct CitySysInfo: Decodable {
     let timezone: Int
+}
+
+struct CityWeatherInfo: Decodable {
+    let description: String
+    let icon: String
 }
 

@@ -1,22 +1,17 @@
 import UIKit
-//
-//struct City {
-//    let title: String
-//    let temperature: Int
-//    let imageName: String
-//    let dateUpdated: Date
-//}
 
 struct CityViewModel {
     let title: String
     let temperature: String
     let dateUpdated: String
-    let systemImageName: String
+    let imageName: String
+    let description: String
 }
 
 class ViewController: UIViewController {
     
     private let model = CitiesModel()
+    private var userString: String = "Don't use"
     private var cityServiceInfos: [CityServiceInfo] = [
         CityServiceInfo(name: "Moskow", id: "524901"),
         CityServiceInfo(name: "Tambov", id: "484646"),
@@ -25,10 +20,11 @@ class ViewController: UIViewController {
     
     private let tableView = UITableView()
     private var citiesViewModels: [CityViewModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Cities"
+        title = userString
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.delegate = self
@@ -54,8 +50,6 @@ class ViewController: UIViewController {
     }
     
     @objc private func didTapAdd() {
-//        let city = City(title: "New City", temperature: 36, imageName: "pencil", dateUpdated: Date())
-//        cities.insert(city, at: 0)
         tableView.reloadData()
     }
     
@@ -87,14 +81,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let viewController = UIViewController()
-    
-        let city = citiesViewModels[indexPath.row]
-        viewController.title = city.title
-        viewController.view.backgroundColor = .blue
-        let navigationController = UINavigationController(rootViewController: viewController)
-        
-        present (navigationController, animated: true, completion: nil)
+       // let detailViewiewController = DetailViewController(city: citiesViewModels[indexPath.row], output: self)
+        let detailViewiewController = DetailViewControllerClosure(city: citiesViewModels[indexPath.row])
+        detailViewiewController.closure = { [weak self] text in
+                    self?.title = text
+        }
+        navigationController?.pushViewController(detailViewiewController, animated: true)
     }
 }
 
@@ -109,7 +101,8 @@ extension ViewController: CitiesModelOutput{
             return CityViewModel(title: city.name,
                                  temperature: String(Int(round(city.main.temp))),
                                  dateUpdated: dateFormatter.string(from: Date()),
-                                 systemImageName: "pencil")
+                                 imageName: city.weather[0].icon,
+                                 description:city.weather[0].description)
         }
         
         self.tableView.reloadData()
@@ -117,3 +110,12 @@ extension ViewController: CitiesModelOutput{
     }
 }
 
+//extension ViewController: DetailViewControllerOutput {
+//    func setUserResponce(userString: String) {
+//        self.userString = userString
+//        self.title = userString
+//        print("AAAAAAAAA I HAVE")
+//        print(userString)
+//    }
+//
+//}

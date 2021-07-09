@@ -1,5 +1,6 @@
 import UIKit
 import PinLayout
+import Kingfisher
 
 final class CityTableViewCell: UITableViewCell {
     private let titleLabel = UILabel()
@@ -73,8 +74,9 @@ final class CityTableViewCell: UITableViewCell {
     func configure(with model: CityViewModel){
         titleLabel.text = model.title
         dateUpdatedLabel.text =  model.dateUpdated
-        iconImageView.image = UIImage(systemName: model.systemImageName)
-        temperatureLabel.text = "\(model.temperature) C"
+        let urlString: String =  "https://openweathermap.org/img/wn/" + model.imageName + "@2x.png"
+        iconImageView.kf.setImage(with: URL(string: urlString))
+        temperatureLabel.text = "\(model.temperature) °C"
     }
 }
 

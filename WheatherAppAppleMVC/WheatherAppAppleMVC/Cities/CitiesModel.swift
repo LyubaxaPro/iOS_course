@@ -27,7 +27,7 @@ final class CitiesModel {
             guard let result = try? decoder.decode(CitiesResponse.self, from: data) else {
                 return
             }
-            print(result.list)
+
             
             DispatchQueue.main.async {
                 self?.output?.didLoad(cities: result.list)
