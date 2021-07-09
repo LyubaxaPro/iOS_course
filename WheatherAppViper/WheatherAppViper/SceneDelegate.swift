@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  WheatherAppViper
-//
-//  Created by Artem Bogachenko on 09.07.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
