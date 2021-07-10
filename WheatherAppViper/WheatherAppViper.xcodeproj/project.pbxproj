@@ -3,36 +3,40 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		045A6825269858FC0019E10F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6824269858FC0019E10F /* AppDelegate.swift */; };
-		045A6827269858FC0019E10F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6826269858FC0019E10F /* SceneDelegate.swift */; };
 		045A6829269858FC0019E10F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6828269858FC0019E10F /* ViewController.swift */; };
-		045A682C269858FC0019E10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A682A269858FC0019E10F /* Main.storyboard */; };
 		045A682E269859050019E10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045A682D269859050019E10F /* Assets.xcassets */; };
 		045A6831269859050019E10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A682F269859050019E10F /* LaunchScreen.storyboard */; };
-		045A683B2698596B0019E10F /* CitiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A683A2698596B0019E10F /* CitiesModel.swift */; };
 		045A683E269859910019E10F /* CitiesServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A683D269859910019E10F /* CitiesServiceHelper.swift */; };
 		045A6841269859B10019E10F /* CityServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6840269859B10019E10F /* CityServiceModel.swift */; };
 		045A6844269859CF0019E10F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6843269859CF0019E10F /* TableViewCell.swift */; };
+		045A687B2699FB460019E10F /* CitiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A687A2699FB460019E10F /* CitiesProtocols.swift */; };
+		045A687E2699FC560019E10F /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A687D2699FC560019E10F /* CitiesPresenter.swift */; };
+		045A68812699FD6A0019E10F /* CitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A68802699FD6A0019E10F /* CitiesInteractor.swift */; };
+		045A6885269A06290019E10F /* CitiesModuleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6884269A06290019E10F /* CitiesModuleContainer.swift */; };
+		045A688A269A10480019E10F /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6889269A10480019E10F /* CitiesRouter.swift */; };
 		485B418529BFD94F9B0609CF /* Pods_WheatherAppViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D641E552D7E8EA2856298 /* Pods_WheatherAppViper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		045A6821269858FC0019E10F /* WheatherAppViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherAppViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045A6824269858FC0019E10F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		045A6826269858FC0019E10F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		045A6828269858FC0019E10F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		045A682B269858FC0019E10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		045A682D269859050019E10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045A6830269859050019E10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045A6832269859050019E10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		045A683A2698596B0019E10F /* CitiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModel.swift; sourceTree = "<group>"; };
 		045A683D269859910019E10F /* CitiesServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesServiceHelper.swift; sourceTree = "<group>"; };
 		045A6840269859B10019E10F /* CityServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityServiceModel.swift; sourceTree = "<group>"; };
 		045A6843269859CF0019E10F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		045A687A2699FB460019E10F /* CitiesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesProtocols.swift; sourceTree = "<group>"; };
+		045A687D2699FC560019E10F /* CitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPresenter.swift; sourceTree = "<group>"; };
+		045A68802699FD6A0019E10F /* CitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesInteractor.swift; sourceTree = "<group>"; };
+		045A6884269A06290019E10F /* CitiesModuleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModuleContainer.swift; sourceTree = "<group>"; };
+		045A6889269A10480019E10F /* CitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRouter.swift; sourceTree = "<group>"; };
 		AAC15F8B1A65709ADF162E02 /* Pods-WheatherAppViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherAppViper.debug.xcconfig"; path = "Target Support Files/Pods-WheatherAppViper/Pods-WheatherAppViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B698CE5B4208E267903474BB /* Pods-WheatherAppViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherAppViper.release.xcconfig"; path = "Target Support Files/Pods-WheatherAppViper/Pods-WheatherAppViper.release.xcconfig"; sourceTree = "<group>"; };
 		E18D641E552D7E8EA2856298 /* Pods_WheatherAppViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherAppViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +77,6 @@
 			children = (
 				045A6839269859570019E10F /* Cities */,
 				045A6824269858FC0019E10F /* AppDelegate.swift */,
-				045A6826269858FC0019E10F /* SceneDelegate.swift */,
-				045A682A269858FC0019E10F /* Main.storyboard */,
 				045A682D269859050019E10F /* Assets.xcassets */,
 				045A682F269859050019E10F /* LaunchScreen.storyboard */,
 				045A6832269859050019E10F /* Info.plist */,
@@ -86,10 +88,14 @@
 			isa = PBXGroup;
 			children = (
 				045A6828269858FC0019E10F /* ViewController.swift */,
-				045A683A2698596B0019E10F /* CitiesModel.swift */,
 				045A683D269859910019E10F /* CitiesServiceHelper.swift */,
 				045A6840269859B10019E10F /* CityServiceModel.swift */,
 				045A6843269859CF0019E10F /* TableViewCell.swift */,
+				045A687A2699FB460019E10F /* CitiesProtocols.swift */,
+				045A687D2699FC560019E10F /* CitiesPresenter.swift */,
+				045A68802699FD6A0019E10F /* CitiesInteractor.swift */,
+				045A6884269A06290019E10F /* CitiesModuleContainer.swift */,
+				045A6889269A10480019E10F /* CitiesRouter.swift */,
 			);
 			path = Cities;
 			sourceTree = "<group>";
@@ -100,7 +106,6 @@
 				AAC15F8B1A65709ADF162E02 /* Pods-WheatherAppViper.debug.xcconfig */,
 				B698CE5B4208E267903474BB /* Pods-WheatherAppViper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,7 +178,6 @@
 			files = (
 				045A6831269859050019E10F /* LaunchScreen.storyboard in Resources */,
 				045A682E269859050019E10F /* Assets.xcassets in Resources */,
-				045A682C269858FC0019E10F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +231,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				045A6829269858FC0019E10F /* ViewController.swift in Sources */,
+				045A688A269A10480019E10F /* CitiesRouter.swift in Sources */,
+				045A68812699FD6A0019E10F /* CitiesInteractor.swift in Sources */,
 				045A6825269858FC0019E10F /* AppDelegate.swift in Sources */,
 				045A6841269859B10019E10F /* CityServiceModel.swift in Sources */,
-				045A683B2698596B0019E10F /* CitiesModel.swift in Sources */,
-				045A6827269858FC0019E10F /* SceneDelegate.swift in Sources */,
 				045A6844269859CF0019E10F /* TableViewCell.swift in Sources */,
+				045A687E2699FC560019E10F /* CitiesPresenter.swift in Sources */,
+				045A687B2699FB460019E10F /* CitiesProtocols.swift in Sources */,
+				045A6885269A06290019E10F /* CitiesModuleContainer.swift in Sources */,
 				045A683E269859910019E10F /* CitiesServiceHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,14 +246,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		045A682A269858FC0019E10F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				045A682B269858FC0019E10F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		045A682F269859050019E10F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

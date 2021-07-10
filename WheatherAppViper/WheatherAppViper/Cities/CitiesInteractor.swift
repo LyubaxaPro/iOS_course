@@ -1,13 +1,11 @@
 import Foundation
 
-protocol CitiesModelOutput: AnyObject {
-    func didLoad(cities: [CityResponse])
+final class CitiesInteractor {
+    weak var output: CitiesInteractorOutput?
 }
 
-final class CitiesModel {
-    
-    weak var output: CitiesModelOutput?
-    func load(cities: [CityServiceInfo]){
+extension CitiesInteractor: CitiesInteractorInput {
+    func load(cities: [CityServiceInfo]) {
         let helper = CitiesServiceHelper(cities: cities)
         let urlString = helper.citiesUrl()
         

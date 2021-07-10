@@ -9,20 +9,24 @@ struct CityViewModel {
 
 class ViewController: UIViewController {
     
-    private let model = CitiesModel()
-    private var cityServiceInfos: [CityServiceInfo] = [
-        CityServiceInfo(name: "Moskow", id: "524901"),
-        CityServiceInfo(name: "Tambov", id: "484646"),
-        CityServiceInfo(name: "Cheboksary", id: "569696")
-    ]
-    
     private let tableView = UITableView()
-    private var citiesViewModels: [CityViewModel] = []
+    private let output: CitiesViewOutput
+    
+    init (output: CitiesViewOutput) {
+        self.output = output
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Cities"
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.delegate = self
         tableView.dataSource = self
@@ -37,8 +41,7 @@ class ViewController: UIViewController {
         
         view.addSubview(tableView)
         
-        model.load(cities: cityServiceInfos)
-        model.output = self
+        output.didLoadView()
     }
     
     override func viewDidLayoutSubviews() {
@@ -47,19 +50,17 @@ class ViewController: UIViewController {
     }
     
     @objc private func didTapAdd() {
-//        let city = City(title: "New City", temperature: 36, imageName: "pencil", dateUpdated: Date())
-//        cities.insert(city, at: 0)
-        tableView.reloadData()
+        output.didTapAddButton()
     }
     
     @objc private func didPullRefresh(){
-        model.load(cities: cityServiceInfos)
+        output.didPullRefresh()
     }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return citiesViewModels.count
+        return output.citiesViewModels.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -67,7 +68,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return .init()
         }
         
-        cell.configure(with: citiesViewModels[indexPath.row])
+        cell.configure(with: output.citiesViewModels[indexPath.row])
         return cell
     }
     
@@ -82,7 +83,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let viewController = UIViewController()
     
-        let city = citiesViewModels[indexPath.row]
+        let city = output.citiesViewModels[indexPath.row]
         viewController.title = city.title
         viewController.view.backgroundColor = .blue
         let navigationController = UINavigationController(rootViewController: viewController)
@@ -91,21 +92,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension ViewController: CitiesModelOutput{
-    func didLoad(cities: [CityResponse]){
+extension ViewController: CitiesViewInput {
+    func reloadData() {
         tableView.refreshControl?.endRefreshing()
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .short
-        
-        self.citiesViewModels = cities.map { city in
-            return CityViewModel(title: city.name,
-                                 temperature: String(Int(round(city.main.temp))),
-                                 dateUpdated: dateFormatter.string(from: Date()),
-                                 systemImageName: "pencil")
-        }
-        
         self.tableView.reloadData()
-        
     }
 }
