@@ -9,6 +9,7 @@ protocol CitiesViewOutput: AnyObject {
     func didLoadView()
     func didPullRefresh()
     func didTapAddButton()
+    func didSelectItem(at index: Int)
 }
 
 protocol CitiesViewInput: AnyObject {
@@ -17,12 +18,16 @@ protocol CitiesViewInput: AnyObject {
 
 protocol CitiesInteractorInput: AnyObject {
     func load(cities: [CityServiceInfo])
+    func loadCity(with name: String)
 }
 
 protocol CitiesInteractorOutput: AnyObject {
     func didLoad(cities: [CityResponse])
+    func didLoad(city: CityResponse)
+    func didRecieveError(error: Error)
 }
 
 protocol CitiesRouterInput: AnyObject {
     func openCities()
+    func showCity(model: CityViewModel)
 }

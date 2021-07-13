@@ -1,5 +1,4 @@
 struct CitiesServiceHelper {
-    private let appId = "0772f05ad089e8446cdc4fb29e50593c"
     private var cities: [CityServiceInfo]
     
     private var urlString: String {
@@ -11,7 +10,7 @@ struct CitiesServiceHelper {
             _ = ids.popLast()
         }
         
-        return "https://api.openweathermap.org/data/2.5/group?id=\(ids)&units=metric&appid=\(appId)"
+        return "https://api.openweathermap.org/data/2.5/group?id=\(ids)&units=metric&appid=\(CitiesManager.appId)"
     }
     
     init(cities: [CityServiceInfo]) {

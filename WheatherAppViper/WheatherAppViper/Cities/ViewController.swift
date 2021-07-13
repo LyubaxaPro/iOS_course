@@ -81,14 +81,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let viewController = UIViewController()
-    
-        let city = output.citiesViewModels[indexPath.row]
-        viewController.title = city.title
-        viewController.view.backgroundColor = .blue
-        let navigationController = UINavigationController(rootViewController: viewController)
-        
-        present (navigationController, animated: true, completion: nil)
+        output.didSelectItem(at: indexPath.row)
     }
 }
 

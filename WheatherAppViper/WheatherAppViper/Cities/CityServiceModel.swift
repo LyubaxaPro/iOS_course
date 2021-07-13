@@ -22,5 +22,5 @@ struct CityMainInfo: Decodable {
 }
 
 struct CitySysInfo: Decodable {
-    let timezone: Int
+    let timezone: Int?
 }

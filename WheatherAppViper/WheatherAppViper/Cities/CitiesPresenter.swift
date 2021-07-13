@@ -16,9 +16,23 @@ final class CitiesPresenter {
         self.interactor = interactor
         self.router = router
     }
+    
+    private func viewModel (from city: CityResponse) -> CityViewModel {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        
+        return CityViewModel(title: city.name,
+                             temperature: String(Int(round(city.main.temp))),
+                             dateUpdated: dateFormatter.string(from: Date()),
+                             systemImageName: "pencil")
+    }
 }
 
 extension CitiesPresenter: CitiesViewOutput {
+    func didSelectItem(at index: Int) {
+        router.showCity(model: citiesViewModels[index])
+    }
+    
     func didLoadView() {
         interactor.load(cities: cityServiceInfos)
     }
@@ -28,21 +42,25 @@ extension CitiesPresenter: CitiesViewOutput {
     }
     
     func didTapAddButton() {
-        router.openCities()
+        interactor.loadCity(with: "Belgorod")
+        //router.openCities()
     }
 }
 
 extension CitiesPresenter: CitiesInteractorOutput {
+    func didLoad(city: CityResponse) {
+        citiesViewModels.append(viewModel(from: city))
+        self.view?.reloadData()
+    }
+    
+    func didRecieveError(error: Error) {
+        //view
+    }
+    
+    
     func didLoad(cities: [CityResponse]) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .short
         
-        self.citiesViewModels = cities.map { city in
-            return CityViewModel(title: city.name,
-                                 temperature: String(Int(round(city.main.temp))),
-                                 dateUpdated: dateFormatter.string(from: Date()),
-                                 systemImageName: "pencil")
-        }
+        self.citiesViewModels = cities.map { viewModel(from: $0) }
         
         self.view?.reloadData()
     }
