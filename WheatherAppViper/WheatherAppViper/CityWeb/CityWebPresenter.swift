@@ -20,9 +20,20 @@ extension CityWebPresenter: CityWebModuleInput {
 
 extension CityWebPresenter: CityWebViewOutput {
     func viewDidLoad() {
-        interactor.load(with: city)
+        interactor.getRequest(with: city)
+    }
+    
+    func didTapRefresh(){
+        interactor.getRequest(with: city)
     }
 }
 
 extension CityWebPresenter: CityWebInteractorOutput {
+    func request(with request: URLRequest) {
+        view?.loadWebView(with: request)
+    }
+    
+    func didRecieveError(error: Error) {
+        print(error.localizedDescription)
+    }
 }

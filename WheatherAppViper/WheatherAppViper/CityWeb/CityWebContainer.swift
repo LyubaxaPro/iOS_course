@@ -8,11 +8,10 @@ final class CityWebContainer {
 	class func assemble(with city: String) -> CityWebContainer {
         let router = CityWebRouter()
         let interactor = CityWebInteractor()
-        let presenter = CityWebPresenter(router: router, interactor: interactor)
+        let presenter = CityWebPresenter(router: router, interactor: interactor, city: city)
 		let viewController = CityWebViewController(output: presenter)
 
 		presenter.view = viewController
-		//presenter.moduleOutput = context.moduleOutput
 
 		interactor.output = presenter
 
