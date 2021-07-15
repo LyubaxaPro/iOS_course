@@ -8,4 +8,7 @@ target 'CollectionViewTest' do
   # Pods for CollectionViewTest
 	pod 'PinLayout'
 	pod 'Kingfisher'
+	pod 'Firebase/Analytics'
+	pod 'Firebase/Firestore'
+	pod 'Firebase/Storage'
 end

@@ -9,7 +9,7 @@ class ViewController: UIViewController {
         
         return UICollectionView(frame: .zero, collectionViewLayout: collectionLayout)
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
