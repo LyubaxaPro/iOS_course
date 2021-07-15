@@ -1,31 +1,36 @@
-//
-//  CollectionProtocols.swift
-//  FirebaseExample
-//
-//  Created by Artem Bogachenko on 13.07.2021.
-//  
-//
+import UIKit
 
-import Foundation
+typealias CollectionItem = PostViewModel
 
 protocol CollectionModuleInput {
 	var moduleOutput: CollectionModuleOutput? { get }
 }
 
-protocol CollectionModuleOutput: class {
+protocol CollectionModuleOutput: AnyObject {
 }
 
-protocol CollectionViewInput: class {
+protocol CollectionViewInput: AnyObject {
+    func reloadData()
 }
 
-protocol CollectionViewOutput: class {
+protocol CollectionViewOutput: AnyObject {
+    var itemsCount: Int { get }
+    func item(at index: Int) -> CollectionItem
+    func didLoadView()
+    func didTapCreateButton()
+    
 }
 
-protocol CollectionInteractorInput: class {
+protocol CollectionInteractorInput: AnyObject {
+    func observePosts()
+    func create(with image: UIImage, title: String)
 }
 
-protocol CollectionInteractorOutput: class {
+protocol CollectionInteractorOutput: AnyObject {
+    func didLoad(posts: [Post])
+    func didReceive(error: Error)
 }
 
-protocol CollectionRouterInput: class {
+protocol CollectionRouterInput: AnyObject {
+    func showImagePicker(output: ImagePickerOutput)
 }

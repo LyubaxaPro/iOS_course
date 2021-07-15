@@ -20,6 +20,12 @@
 		045A6885269A06290019E10F /* CitiesModuleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6884269A06290019E10F /* CitiesModuleContainer.swift */; };
 		045A688A269A10480019E10F /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6889269A10480019E10F /* CitiesRouter.swift */; };
 		045A68E3269DC24A0019E10F /* CitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A68E2269DC24A0019E10F /* CitiesManager.swift */; };
+		048E28D126A05C1A009AEB13 /* CityWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28CB26A05C1A009AEB13 /* CityWebPresenter.swift */; };
+		048E28D226A05C1A009AEB13 /* CityWebRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28CC26A05C1A009AEB13 /* CityWebRouter.swift */; };
+		048E28D326A05C1A009AEB13 /* CityWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28CD26A05C1A009AEB13 /* CityWebViewController.swift */; };
+		048E28D426A05C1A009AEB13 /* CityWebProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28CE26A05C1A009AEB13 /* CityWebProtocols.swift */; };
+		048E28D526A05C1A009AEB13 /* CityWebInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28CF26A05C1A009AEB13 /* CityWebInteractor.swift */; };
+		048E28D626A05C1A009AEB13 /* CityWebContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E28D026A05C1A009AEB13 /* CityWebContainer.swift */; };
 		485B418529BFD94F9B0609CF /* Pods_WheatherAppViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E18D641E552D7E8EA2856298 /* Pods_WheatherAppViper.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +45,12 @@
 		045A6884269A06290019E10F /* CitiesModuleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModuleContainer.swift; sourceTree = "<group>"; };
 		045A6889269A10480019E10F /* CitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRouter.swift; sourceTree = "<group>"; };
 		045A68E2269DC24A0019E10F /* CitiesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesManager.swift; sourceTree = "<group>"; };
+		048E28CB26A05C1A009AEB13 /* CityWebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebPresenter.swift; sourceTree = "<group>"; };
+		048E28CC26A05C1A009AEB13 /* CityWebRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebRouter.swift; sourceTree = "<group>"; };
+		048E28CD26A05C1A009AEB13 /* CityWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebViewController.swift; sourceTree = "<group>"; };
+		048E28CE26A05C1A009AEB13 /* CityWebProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebProtocols.swift; sourceTree = "<group>"; };
+		048E28CF26A05C1A009AEB13 /* CityWebInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebInteractor.swift; sourceTree = "<group>"; };
+		048E28D026A05C1A009AEB13 /* CityWebContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebContainer.swift; sourceTree = "<group>"; };
 		AAC15F8B1A65709ADF162E02 /* Pods-WheatherAppViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherAppViper.debug.xcconfig"; path = "Target Support Files/Pods-WheatherAppViper/Pods-WheatherAppViper.debug.xcconfig"; sourceTree = "<group>"; };
 		B698CE5B4208E267903474BB /* Pods-WheatherAppViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherAppViper.release.xcconfig"; path = "Target Support Files/Pods-WheatherAppViper/Pods-WheatherAppViper.release.xcconfig"; sourceTree = "<group>"; };
 		E18D641E552D7E8EA2856298 /* Pods_WheatherAppViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherAppViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +89,7 @@
 		045A6823269858FC0019E10F /* WheatherAppViper */ = {
 			isa = PBXGroup;
 			children = (
+				048E28CA26A05BE7009AEB13 /* CityWeb */,
 				045A6839269859570019E10F /* Cities */,
 				045A6824269858FC0019E10F /* AppDelegate.swift */,
 				045A682D269859050019E10F /* Assets.xcassets */,
@@ -101,6 +114,19 @@
 				045A68E2269DC24A0019E10F /* CitiesManager.swift */,
 			);
 			path = Cities;
+			sourceTree = "<group>";
+		};
+		048E28CA26A05BE7009AEB13 /* CityWeb */ = {
+			isa = PBXGroup;
+			children = (
+				048E28CB26A05C1A009AEB13 /* CityWebPresenter.swift */,
+				048E28CC26A05C1A009AEB13 /* CityWebRouter.swift */,
+				048E28CD26A05C1A009AEB13 /* CityWebViewController.swift */,
+				048E28CE26A05C1A009AEB13 /* CityWebProtocols.swift */,
+				048E28CF26A05C1A009AEB13 /* CityWebInteractor.swift */,
+				048E28D026A05C1A009AEB13 /* CityWebContainer.swift */,
+			);
+			path = CityWeb;
 			sourceTree = "<group>";
 		};
 		83BCA1D04009D3192B388DF8 /* Pods */ = {
@@ -237,10 +263,16 @@
 				045A688A269A10480019E10F /* CitiesRouter.swift in Sources */,
 				045A68812699FD6A0019E10F /* CitiesInteractor.swift in Sources */,
 				045A6825269858FC0019E10F /* AppDelegate.swift in Sources */,
+				048E28D526A05C1A009AEB13 /* CityWebInteractor.swift in Sources */,
+				048E28D626A05C1A009AEB13 /* CityWebContainer.swift in Sources */,
+				048E28D326A05C1A009AEB13 /* CityWebViewController.swift in Sources */,
 				045A6841269859B10019E10F /* CityServiceModel.swift in Sources */,
 				045A6844269859CF0019E10F /* TableViewCell.swift in Sources */,
+				048E28D426A05C1A009AEB13 /* CityWebProtocols.swift in Sources */,
 				045A687E2699FC560019E10F /* CitiesPresenter.swift in Sources */,
 				045A68E3269DC24A0019E10F /* CitiesManager.swift in Sources */,
+				048E28D226A05C1A009AEB13 /* CityWebRouter.swift in Sources */,
+				048E28D126A05C1A009AEB13 /* CityWebPresenter.swift in Sources */,
 				045A687B2699FB460019E10F /* CitiesProtocols.swift in Sources */,
 				045A6885269A06290019E10F /* CitiesModuleContainer.swift in Sources */,
 				045A683E269859910019E10F /* CitiesServiceHelper.swift in Sources */,

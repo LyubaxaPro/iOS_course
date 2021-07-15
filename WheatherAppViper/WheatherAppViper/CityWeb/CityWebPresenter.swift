@@ -1,11 +1,3 @@
-//
-//  CityWebPresenter.swift
-//  WheatherAppViper
-//
-//  Created by Artem Bogachenko on 15.07.2021.
-//  
-//
-
 import Foundation
 
 final class CityWebPresenter {
@@ -14,10 +6,12 @@ final class CityWebPresenter {
 
 	private let router: CityWebRouterInput
 	private let interactor: CityWebInteractorInput
+    private let city: String
 
-    init(router: CityWebRouterInput, interactor: CityWebInteractorInput) {
+    init(router: CityWebRouterInput, interactor: CityWebInteractorInput, city: String) {
         self.router = router
         self.interactor = interactor
+        self.city = city
     }
 }
 
@@ -25,6 +19,9 @@ extension CityWebPresenter: CityWebModuleInput {
 }
 
 extension CityWebPresenter: CityWebViewOutput {
+    func viewDidLoad() {
+        interactor.load(with: city)
+    }
 }
 
 extension CityWebPresenter: CityWebInteractorOutput {

@@ -1,11 +1,3 @@
-//
-//  CityWebProtocols.swift
-//  WheatherAppViper
-//
-//  Created by Artem Bogachenko on 15.07.2021.
-//  
-//
-
 import Foundation
 
 protocol CityWebModuleInput {
@@ -19,9 +11,11 @@ protocol CityWebViewInput: class {
 }
 
 protocol CityWebViewOutput: class {
+    func viewDidLoad()
 }
 
 protocol CityWebInteractorInput: class {
+    func load(with city: String)
 }
 
 protocol CityWebInteractorOutput: class {

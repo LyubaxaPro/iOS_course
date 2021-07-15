@@ -1,8 +1,6 @@
-//
-//  PostViewModel.swift
-//  FirebaseExample
-//
-//  Created by Artem Bogachenko on 13.07.2021.
-//
-
 import Foundation
+
+struct PostViewModel {
+    let title: String
+    let image: String?
+}

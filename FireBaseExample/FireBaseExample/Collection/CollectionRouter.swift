@@ -1,15 +1,14 @@
-//
-//  CollectionRouter.swift
-//  FirebaseExample
-//
-//  Created by Artem Bogachenko on 13.07.2021.
-//  
-//
-
 import UIKit
 
 final class CollectionRouter {
+    private let imagePicker = ImagePicker()
+    weak var viewController: UIViewController?
 }
 
 extension CollectionRouter: CollectionRouterInput {
+    func showImagePicker(output: ImagePickerOutput) {
+        imagePicker.output = output
+        imagePicker.start(in: viewController)
+    }
+    
 }

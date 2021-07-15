@@ -1,11 +1,3 @@
-//
-//  CityWebContainer.swift
-//  WheatherAppViper
-//
-//  Created by Artem Bogachenko on 15.07.2021.
-//  
-//
-
 import UIKit
 
 final class CityWebContainer {
@@ -13,14 +5,14 @@ final class CityWebContainer {
 	let viewController: UIViewController
 	private(set) weak var router: CityWebRouterInput!
 
-	class func assemble(with context: CityWebContext) -> CityWebContainer {
+	class func assemble(with city: String) -> CityWebContainer {
         let router = CityWebRouter()
         let interactor = CityWebInteractor()
         let presenter = CityWebPresenter(router: router, interactor: interactor)
 		let viewController = CityWebViewController(output: presenter)
 
 		presenter.view = viewController
-		presenter.moduleOutput = context.moduleOutput
+		//presenter.moduleOutput = context.moduleOutput
 
 		interactor.output = presenter
 
@@ -34,6 +26,3 @@ final class CityWebContainer {
 	}
 }
 
-struct CityWebContext {
-	weak var moduleOutput: CityWebModuleOutput?
-}

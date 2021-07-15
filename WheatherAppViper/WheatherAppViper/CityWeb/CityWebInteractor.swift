@@ -1,11 +1,3 @@
-//
-//  CityWebInteractor.swift
-//  WheatherAppViper
-//
-//  Created by Artem Bogachenko on 15.07.2021.
-//  
-//
-
 import Foundation
 
 final class CityWebInteractor {
@@ -13,4 +5,7 @@ final class CityWebInteractor {
 }
 
 extension CityWebInteractor: CityWebInteractorInput {
+    func load(with city: String) {
+        
+    }
 }

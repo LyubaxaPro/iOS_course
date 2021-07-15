@@ -1,11 +1,3 @@
-//
-//  CollectionContainer.swift
-//  FirebaseExample
-//
-//  Created by Artem Bogachenko on 13.07.2021.
-//  
-//
-
 import UIKit
 
 final class CollectionContainer {
@@ -21,7 +13,7 @@ final class CollectionContainer {
 
 		presenter.view = viewController
 		presenter.moduleOutput = context.moduleOutput
-
+        router.viewController = viewController
 		interactor.output = presenter
 
         return CollectionContainer(view: viewController, input: presenter, router: router)
