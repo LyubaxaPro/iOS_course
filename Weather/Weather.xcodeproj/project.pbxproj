@@ -10,45 +10,45 @@
 		048E2B1A26A5A31E009AEB13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B1926A5A31E009AEB13 /* AppDelegate.swift */; };
 		048E2B1C26A5A31E009AEB13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B1B26A5A31E009AEB13 /* SceneDelegate.swift */; };
 		048E2B2326A5A321009AEB13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048E2B2226A5A321009AEB13 /* Assets.xcassets */; };
-		048E2B3B26A5A4BE009AEB13 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3526A5A4BE009AEB13 /* MapPresenter.swift */; };
-		048E2B3C26A5A4BE009AEB13 /* MapContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3626A5A4BE009AEB13 /* MapContainer.swift */; };
-		048E2B3D26A5A4BE009AEB13 /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3726A5A4BE009AEB13 /* MapProtocols.swift */; };
-		048E2B3E26A5A4BE009AEB13 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3826A5A4BE009AEB13 /* MapInteractor.swift */; };
-		048E2B3F26A5A4BE009AEB13 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3926A5A4BE009AEB13 /* MapRouter.swift */; };
-		048E2B4026A5A4BE009AEB13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B3A26A5A4BE009AEB13 /* MapViewController.swift */; };
-		048E2B4926A5A4D3009AEB13 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4326A5A4D2009AEB13 /* ProfileProtocols.swift */; };
-		048E2B4A26A5A4D3009AEB13 /* ProfileContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4426A5A4D2009AEB13 /* ProfileContainer.swift */; };
-		048E2B4B26A5A4D3009AEB13 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4526A5A4D2009AEB13 /* ProfileRouter.swift */; };
-		048E2B4C26A5A4D3009AEB13 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4626A5A4D2009AEB13 /* ProfilePresenter.swift */; };
-		048E2B4D26A5A4D3009AEB13 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4726A5A4D2009AEB13 /* ProfileInteractor.swift */; };
-		048E2B4E26A5A4D3009AEB13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B4826A5A4D2009AEB13 /* ProfileViewController.swift */; };
-		048E2B5B26A5A4E9009AEB13 /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5126A5A4E9009AEB13 /* CitiesPresenter.swift */; };
-		048E2B5C26A5A4E9009AEB13 /* CitiesModuleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5226A5A4E9009AEB13 /* CitiesModuleContainer.swift */; };
-		048E2B5D26A5A4E9009AEB13 /* CitiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5326A5A4E9009AEB13 /* CitiesProtocols.swift */; };
-		048E2B5E26A5A4E9009AEB13 /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5426A5A4E9009AEB13 /* CitiesRouter.swift */; };
-		048E2B5F26A5A4E9009AEB13 /* CitiesServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5526A5A4E9009AEB13 /* CitiesServiceHelper.swift */; };
-		048E2B6026A5A4E9009AEB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5626A5A4E9009AEB13 /* ViewController.swift */; };
-		048E2B6126A5A4E9009AEB13 /* CityServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5726A5A4E9009AEB13 /* CityServiceModel.swift */; };
-		048E2B6226A5A4E9009AEB13 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5826A5A4E9009AEB13 /* TableViewCell.swift */; };
-		048E2B6326A5A4E9009AEB13 /* CitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5926A5A4E9009AEB13 /* CitiesManager.swift */; };
-		048E2B6426A5A4E9009AEB13 /* CitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B5A26A5A4E9009AEB13 /* CitiesInteractor.swift */; };
-		048E2B6E26A5A50A009AEB13 /* CityNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6726A5A509009AEB13 /* CityNetworkManager.swift */; };
-		048E2B6F26A5A50A009AEB13 /* CityWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6826A5A509009AEB13 /* CityWebViewController.swift */; };
-		048E2B7026A5A50A009AEB13 /* CityWebProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6926A5A509009AEB13 /* CityWebProtocols.swift */; };
-		048E2B7126A5A50A009AEB13 /* CityWebContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6A26A5A509009AEB13 /* CityWebContainer.swift */; };
-		048E2B7226A5A50A009AEB13 /* CityWebInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6B26A5A509009AEB13 /* CityWebInteractor.swift */; };
-		048E2B7326A5A50A009AEB13 /* CityWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6C26A5A50A009AEB13 /* CityWebPresenter.swift */; };
-		048E2B7426A5A50A009AEB13 /* CityWebRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2B6D26A5A50A009AEB13 /* CityWebRouter.swift */; };
 		048E2BB326A5B0F7009AEB13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048E2BB226A5B0F7009AEB13 /* GoogleService-Info.plist */; };
-		048E2BBE26A5B4F3009AEB13 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BB726A5B4F2009AEB13 /* AuthManager.swift */; };
-		048E2BBF26A5B4F3009AEB13 /* AuthChoiseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BB826A5B4F2009AEB13 /* AuthChoiseContainer.swift */; };
-		048E2BC026A5B4F3009AEB13 /* AuthChoiseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BB926A5B4F2009AEB13 /* AuthChoiseInteractor.swift */; };
-		048E2BC126A5B4F3009AEB13 /* AuthChoiseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BBA26A5B4F2009AEB13 /* AuthChoiseProtocols.swift */; };
-		048E2BC226A5B4F3009AEB13 /* AuthChoiseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BBB26A5B4F2009AEB13 /* AuthChoiseRouter.swift */; };
-		048E2BC326A5B4F3009AEB13 /* AuthChoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BBC26A5B4F2009AEB13 /* AuthChoiseViewController.swift */; };
-		048E2BC426A5B4F3009AEB13 /* AuthChoisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BBD26A5B4F3009AEB13 /* AuthChoisePresenter.swift */; };
 		048E2BC726A5C5FF009AEB13 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BC626A5C5FF009AEB13 /* ProfileManager.swift */; };
 		048E2BCA26A5D883009AEB13 /* TabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BC926A5D883009AEB13 /* TabBarContainer.swift */; };
+		048E2BFB26A5EF21009AEB13 /* AuthChoicePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BF526A5EF21009AEB13 /* AuthChoicePresenter.swift */; };
+		048E2BFC26A5EF21009AEB13 /* AuthChoiceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BF626A5EF21009AEB13 /* AuthChoiceRouter.swift */; };
+		048E2BFD26A5EF21009AEB13 /* AuthChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BF726A5EF21009AEB13 /* AuthChoiceViewController.swift */; };
+		048E2BFE26A5EF21009AEB13 /* AuthChoiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BF826A5EF21009AEB13 /* AuthChoiceProtocols.swift */; };
+		048E2BFF26A5EF21009AEB13 /* AuthChoiceInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BF926A5EF21009AEB13 /* AuthChoiceInteractor.swift */; };
+		048E2C0026A5EF21009AEB13 /* AuthChoiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2BFA26A5EF21009AEB13 /* AuthChoiceContainer.swift */; };
+		048E2C0426A5EFA7009AEB13 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0326A5EFA7009AEB13 /* AuthManager.swift */; };
+		048E2C0D26A5F023009AEB13 /* CityWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0726A5F023009AEB13 /* CityWebPresenter.swift */; };
+		048E2C0E26A5F023009AEB13 /* CityWebRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0826A5F023009AEB13 /* CityWebRouter.swift */; };
+		048E2C0F26A5F023009AEB13 /* CityWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0926A5F023009AEB13 /* CityWebViewController.swift */; };
+		048E2C1026A5F023009AEB13 /* CityWebProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0A26A5F023009AEB13 /* CityWebProtocols.swift */; };
+		048E2C1126A5F023009AEB13 /* CityWebInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0B26A5F023009AEB13 /* CityWebInteractor.swift */; };
+		048E2C1226A5F023009AEB13 /* CityWebContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C0C26A5F023009AEB13 /* CityWebContainer.swift */; };
+		048E2C1626A5F079009AEB13 /* CityNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C1526A5F079009AEB13 /* CityNetworkManager.swift */; };
+		048E2C1A26A5F0C1009AEB13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C1926A5F0C1009AEB13 /* ViewController.swift */; };
+		048E2C1E26A5F0DE009AEB13 /* CitiesServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C1D26A5F0DE009AEB13 /* CitiesServiceHelper.swift */; };
+		048E2C2126A5F0F6009AEB13 /* CityServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2026A5F0F6009AEB13 /* CityServiceModel.swift */; };
+		048E2C2426A5F10E009AEB13 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2326A5F10E009AEB13 /* TableViewCell.swift */; };
+		048E2C2726A5F12D009AEB13 /* CitiesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2626A5F12D009AEB13 /* CitiesProtocols.swift */; };
+		048E2C2A26A5F149009AEB13 /* CitiesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2926A5F149009AEB13 /* CitiesPresenter.swift */; };
+		048E2C2D26A5F178009AEB13 /* CitiesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2C26A5F178009AEB13 /* CitiesInteractor.swift */; };
+		048E2C3026A5F18F009AEB13 /* CitiesModuleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C2F26A5F18F009AEB13 /* CitiesModuleContainer.swift */; };
+		048E2C3326A5F1D7009AEB13 /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3226A5F1D7009AEB13 /* CitiesRouter.swift */; };
+		048E2C3626A5F1F4009AEB13 /* CitiesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3526A5F1F4009AEB13 /* CitiesManager.swift */; };
+		048E2C3E26A5F263009AEB13 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3826A5F263009AEB13 /* ProfilePresenter.swift */; };
+		048E2C3F26A5F263009AEB13 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3926A5F263009AEB13 /* ProfileRouter.swift */; };
+		048E2C4026A5F263009AEB13 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3A26A5F263009AEB13 /* ProfileViewController.swift */; };
+		048E2C4126A5F263009AEB13 /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3B26A5F263009AEB13 /* ProfileProtocols.swift */; };
+		048E2C4226A5F263009AEB13 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3C26A5F263009AEB13 /* ProfileInteractor.swift */; };
+		048E2C4326A5F263009AEB13 /* ProfileContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C3D26A5F263009AEB13 /* ProfileContainer.swift */; };
+		048E2C4D26A5F2B8009AEB13 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4726A5F2B8009AEB13 /* MapPresenter.swift */; };
+		048E2C4E26A5F2B8009AEB13 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4826A5F2B8009AEB13 /* MapRouter.swift */; };
+		048E2C4F26A5F2B8009AEB13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4926A5F2B8009AEB13 /* MapViewController.swift */; };
+		048E2C5026A5F2B8009AEB13 /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4A26A5F2B8009AEB13 /* MapProtocols.swift */; };
+		048E2C5126A5F2B8009AEB13 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4B26A5F2B8009AEB13 /* MapInteractor.swift */; };
+		048E2C5226A5F2B8009AEB13 /* MapContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */; };
 		76A8B65C025130CAED08D07B /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,45 +58,45 @@
 		048E2B1B26A5A31E009AEB13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		048E2B2226A5A321009AEB13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048E2B2726A5A321009AEB13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		048E2B3526A5A4BE009AEB13 /* MapPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapPresenter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapPresenter.swift; sourceTree = "<group>"; };
-		048E2B3626A5A4BE009AEB13 /* MapContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapContainer.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapContainer.swift; sourceTree = "<group>"; };
-		048E2B3726A5A4BE009AEB13 /* MapProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapProtocols.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapProtocols.swift; sourceTree = "<group>"; };
-		048E2B3826A5A4BE009AEB13 /* MapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapInteractor.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapInteractor.swift; sourceTree = "<group>"; };
-		048E2B3926A5A4BE009AEB13 /* MapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapRouter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapRouter.swift; sourceTree = "<group>"; };
-		048E2B3A26A5A4BE009AEB13 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../../../WheatherAppViper/WheatherAppViper/Map/MapViewController.swift; sourceTree = "<group>"; };
-		048E2B4326A5A4D2009AEB13 /* ProfileProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileProtocols.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfileProtocols.swift; sourceTree = "<group>"; };
-		048E2B4426A5A4D2009AEB13 /* ProfileContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileContainer.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfileContainer.swift; sourceTree = "<group>"; };
-		048E2B4526A5A4D2009AEB13 /* ProfileRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileRouter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfileRouter.swift; sourceTree = "<group>"; };
-		048E2B4626A5A4D2009AEB13 /* ProfilePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfilePresenter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfilePresenter.swift; sourceTree = "<group>"; };
-		048E2B4726A5A4D2009AEB13 /* ProfileInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileInteractor.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfileInteractor.swift; sourceTree = "<group>"; };
-		048E2B4826A5A4D2009AEB13 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../../../WheatherAppViper/WheatherAppViper/Profile/ProfileViewController.swift; sourceTree = "<group>"; };
-		048E2B5126A5A4E9009AEB13 /* CitiesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesPresenter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesPresenter.swift; sourceTree = "<group>"; };
-		048E2B5226A5A4E9009AEB13 /* CitiesModuleContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesModuleContainer.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesModuleContainer.swift; sourceTree = "<group>"; };
-		048E2B5326A5A4E9009AEB13 /* CitiesProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesProtocols.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesProtocols.swift; sourceTree = "<group>"; };
-		048E2B5426A5A4E9009AEB13 /* CitiesRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesRouter.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesRouter.swift; sourceTree = "<group>"; };
-		048E2B5526A5A4E9009AEB13 /* CitiesServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesServiceHelper.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesServiceHelper.swift; sourceTree = "<group>"; };
-		048E2B5626A5A4E9009AEB13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/ViewController.swift; sourceTree = "<group>"; };
-		048E2B5726A5A4E9009AEB13 /* CityServiceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityServiceModel.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CityServiceModel.swift; sourceTree = "<group>"; };
-		048E2B5826A5A4E9009AEB13 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/TableViewCell.swift; sourceTree = "<group>"; };
-		048E2B5926A5A4E9009AEB13 /* CitiesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesManager.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesManager.swift; sourceTree = "<group>"; };
-		048E2B5A26A5A4E9009AEB13 /* CitiesInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CitiesInteractor.swift; path = ../../../WheatherAppViper/WheatherAppViper/Cities/CitiesInteractor.swift; sourceTree = "<group>"; };
-		048E2B6726A5A509009AEB13 /* CityNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityNetworkManager.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityNetworkManager.swift; sourceTree = "<group>"; };
-		048E2B6826A5A509009AEB13 /* CityWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebViewController.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebViewController.swift; sourceTree = "<group>"; };
-		048E2B6926A5A509009AEB13 /* CityWebProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebProtocols.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebProtocols.swift; sourceTree = "<group>"; };
-		048E2B6A26A5A509009AEB13 /* CityWebContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebContainer.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebContainer.swift; sourceTree = "<group>"; };
-		048E2B6B26A5A509009AEB13 /* CityWebInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebInteractor.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebInteractor.swift; sourceTree = "<group>"; };
-		048E2B6C26A5A50A009AEB13 /* CityWebPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebPresenter.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebPresenter.swift; sourceTree = "<group>"; };
-		048E2B6D26A5A50A009AEB13 /* CityWebRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityWebRouter.swift; path = ../../../WheatherAppViper/WheatherAppViper/CityWeb/CityWebRouter.swift; sourceTree = "<group>"; };
 		048E2BB226A5B0F7009AEB13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		048E2BB726A5B4F2009AEB13 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthManager.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthManager.swift; sourceTree = "<group>"; };
-		048E2BB826A5B4F2009AEB13 /* AuthChoiseContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoiseContainer.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoiseContainer.swift; sourceTree = "<group>"; };
-		048E2BB926A5B4F2009AEB13 /* AuthChoiseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoiseInteractor.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoiseInteractor.swift; sourceTree = "<group>"; };
-		048E2BBA26A5B4F2009AEB13 /* AuthChoiseProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoiseProtocols.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoiseProtocols.swift; sourceTree = "<group>"; };
-		048E2BBB26A5B4F2009AEB13 /* AuthChoiseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoiseRouter.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoiseRouter.swift; sourceTree = "<group>"; };
-		048E2BBC26A5B4F2009AEB13 /* AuthChoiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoiseViewController.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoiseViewController.swift; sourceTree = "<group>"; };
-		048E2BBD26A5B4F3009AEB13 /* AuthChoisePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthChoisePresenter.swift; path = ../../../WheatherAppViper/WheatherAppViper/AuthChoise/AuthChoisePresenter.swift; sourceTree = "<group>"; };
 		048E2BC626A5C5FF009AEB13 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
 		048E2BC926A5D883009AEB13 /* TabBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContainer.swift; sourceTree = "<group>"; };
+		048E2BF526A5EF21009AEB13 /* AuthChoicePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoicePresenter.swift; sourceTree = "<group>"; };
+		048E2BF626A5EF21009AEB13 /* AuthChoiceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoiceRouter.swift; sourceTree = "<group>"; };
+		048E2BF726A5EF21009AEB13 /* AuthChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoiceViewController.swift; sourceTree = "<group>"; };
+		048E2BF826A5EF21009AEB13 /* AuthChoiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoiceProtocols.swift; sourceTree = "<group>"; };
+		048E2BF926A5EF21009AEB13 /* AuthChoiceInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoiceInteractor.swift; sourceTree = "<group>"; };
+		048E2BFA26A5EF21009AEB13 /* AuthChoiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthChoiceContainer.swift; sourceTree = "<group>"; };
+		048E2C0326A5EFA7009AEB13 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		048E2C0726A5F023009AEB13 /* CityWebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebPresenter.swift; sourceTree = "<group>"; };
+		048E2C0826A5F023009AEB13 /* CityWebRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebRouter.swift; sourceTree = "<group>"; };
+		048E2C0926A5F023009AEB13 /* CityWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebViewController.swift; sourceTree = "<group>"; };
+		048E2C0A26A5F023009AEB13 /* CityWebProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebProtocols.swift; sourceTree = "<group>"; };
+		048E2C0B26A5F023009AEB13 /* CityWebInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebInteractor.swift; sourceTree = "<group>"; };
+		048E2C0C26A5F023009AEB13 /* CityWebContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWebContainer.swift; sourceTree = "<group>"; };
+		048E2C1526A5F079009AEB13 /* CityNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityNetworkManager.swift; sourceTree = "<group>"; };
+		048E2C1926A5F0C1009AEB13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		048E2C1D26A5F0DE009AEB13 /* CitiesServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesServiceHelper.swift; sourceTree = "<group>"; };
+		048E2C2026A5F0F6009AEB13 /* CityServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityServiceModel.swift; sourceTree = "<group>"; };
+		048E2C2326A5F10E009AEB13 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		048E2C2626A5F12D009AEB13 /* CitiesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesProtocols.swift; sourceTree = "<group>"; };
+		048E2C2926A5F149009AEB13 /* CitiesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesPresenter.swift; sourceTree = "<group>"; };
+		048E2C2C26A5F178009AEB13 /* CitiesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesInteractor.swift; sourceTree = "<group>"; };
+		048E2C2F26A5F18F009AEB13 /* CitiesModuleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesModuleContainer.swift; sourceTree = "<group>"; };
+		048E2C3226A5F1D7009AEB13 /* CitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRouter.swift; sourceTree = "<group>"; };
+		048E2C3526A5F1F4009AEB13 /* CitiesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesManager.swift; sourceTree = "<group>"; };
+		048E2C3826A5F263009AEB13 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		048E2C3926A5F263009AEB13 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		048E2C3A26A5F263009AEB13 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		048E2C3B26A5F263009AEB13 /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		048E2C3C26A5F263009AEB13 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		048E2C3D26A5F263009AEB13 /* ProfileContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainer.swift; sourceTree = "<group>"; };
+		048E2C4726A5F2B8009AEB13 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		048E2C4826A5F2B8009AEB13 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		048E2C4926A5F2B8009AEB13 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		048E2C4A26A5F2B8009AEB13 /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = "<group>"; };
+		048E2C4B26A5F2B8009AEB13 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainer.swift; sourceTree = "<group>"; };
 		64068A6236FE1A6123F67665 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		C2AE75BC36BD370BC43D7588 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,11 +135,11 @@
 		048E2B1826A5A31E009AEB13 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				048E2BB626A5B4D7009AEB13 /* AuthChoice */,
-				048E2B6626A5A4F5009AEB13 /* CityWeb */,
-				048E2B5026A5A4D9009AEB13 /* Cities */,
+				048E2C4626A5F2A5009AEB13 /* Map */,
+				048E2C1826A5F0A0009AEB13 /* Cities */,
+				048E2C0626A5F00C009AEB13 /* CityWeb */,
+				048E2BF426A5EEFB009AEB13 /* AuthChoice */,
 				048E2B4226A5A4C4009AEB13 /* Profile */,
-				048E2B3426A5A4AD009AEB13 /* Map */,
 				048E2B1926A5A31E009AEB13 /* AppDelegate.swift */,
 				048E2B1B26A5A31E009AEB13 /* SceneDelegate.swift */,
 				048E2B2226A5A321009AEB13 /* Assets.xcassets */,
@@ -150,76 +150,76 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		048E2B3426A5A4AD009AEB13 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				048E2B3626A5A4BE009AEB13 /* MapContainer.swift */,
-				048E2B3826A5A4BE009AEB13 /* MapInteractor.swift */,
-				048E2B3526A5A4BE009AEB13 /* MapPresenter.swift */,
-				048E2B3726A5A4BE009AEB13 /* MapProtocols.swift */,
-				048E2B3926A5A4BE009AEB13 /* MapRouter.swift */,
-				048E2B3A26A5A4BE009AEB13 /* MapViewController.swift */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
 		048E2B4226A5A4C4009AEB13 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				048E2B4426A5A4D2009AEB13 /* ProfileContainer.swift */,
-				048E2B4726A5A4D2009AEB13 /* ProfileInteractor.swift */,
-				048E2B4626A5A4D2009AEB13 /* ProfilePresenter.swift */,
-				048E2B4326A5A4D2009AEB13 /* ProfileProtocols.swift */,
-				048E2B4526A5A4D2009AEB13 /* ProfileRouter.swift */,
-				048E2B4826A5A4D2009AEB13 /* ProfileViewController.swift */,
 				048E2BC626A5C5FF009AEB13 /* ProfileManager.swift */,
+				048E2C3826A5F263009AEB13 /* ProfilePresenter.swift */,
+				048E2C3926A5F263009AEB13 /* ProfileRouter.swift */,
+				048E2C3A26A5F263009AEB13 /* ProfileViewController.swift */,
+				048E2C3B26A5F263009AEB13 /* ProfileProtocols.swift */,
+				048E2C3C26A5F263009AEB13 /* ProfileInteractor.swift */,
+				048E2C3D26A5F263009AEB13 /* ProfileContainer.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		048E2B5026A5A4D9009AEB13 /* Cities */ = {
+		048E2BF426A5EEFB009AEB13 /* AuthChoice */ = {
 			isa = PBXGroup;
 			children = (
-				048E2B5A26A5A4E9009AEB13 /* CitiesInteractor.swift */,
-				048E2B5926A5A4E9009AEB13 /* CitiesManager.swift */,
-				048E2B5226A5A4E9009AEB13 /* CitiesModuleContainer.swift */,
-				048E2B5126A5A4E9009AEB13 /* CitiesPresenter.swift */,
-				048E2B5326A5A4E9009AEB13 /* CitiesProtocols.swift */,
-				048E2B5426A5A4E9009AEB13 /* CitiesRouter.swift */,
-				048E2B5526A5A4E9009AEB13 /* CitiesServiceHelper.swift */,
-				048E2B5726A5A4E9009AEB13 /* CityServiceModel.swift */,
-				048E2B5826A5A4E9009AEB13 /* TableViewCell.swift */,
-				048E2B5626A5A4E9009AEB13 /* ViewController.swift */,
+				048E2BF526A5EF21009AEB13 /* AuthChoicePresenter.swift */,
+				048E2BF626A5EF21009AEB13 /* AuthChoiceRouter.swift */,
+				048E2BF726A5EF21009AEB13 /* AuthChoiceViewController.swift */,
+				048E2BF826A5EF21009AEB13 /* AuthChoiceProtocols.swift */,
+				048E2BF926A5EF21009AEB13 /* AuthChoiceInteractor.swift */,
+				048E2BFA26A5EF21009AEB13 /* AuthChoiceContainer.swift */,
+				048E2C0326A5EFA7009AEB13 /* AuthManager.swift */,
 			);
-			path = Cities;
+			path = AuthChoice;
 			sourceTree = "<group>";
 		};
-		048E2B6626A5A4F5009AEB13 /* CityWeb */ = {
+		048E2C0626A5F00C009AEB13 /* CityWeb */ = {
 			isa = PBXGroup;
 			children = (
-				048E2B6726A5A509009AEB13 /* CityNetworkManager.swift */,
-				048E2B6A26A5A509009AEB13 /* CityWebContainer.swift */,
-				048E2B6B26A5A509009AEB13 /* CityWebInteractor.swift */,
-				048E2B6C26A5A50A009AEB13 /* CityWebPresenter.swift */,
-				048E2B6926A5A509009AEB13 /* CityWebProtocols.swift */,
-				048E2B6D26A5A50A009AEB13 /* CityWebRouter.swift */,
-				048E2B6826A5A509009AEB13 /* CityWebViewController.swift */,
+				048E2C0726A5F023009AEB13 /* CityWebPresenter.swift */,
+				048E2C0826A5F023009AEB13 /* CityWebRouter.swift */,
+				048E2C0926A5F023009AEB13 /* CityWebViewController.swift */,
+				048E2C0A26A5F023009AEB13 /* CityWebProtocols.swift */,
+				048E2C0B26A5F023009AEB13 /* CityWebInteractor.swift */,
+				048E2C0C26A5F023009AEB13 /* CityWebContainer.swift */,
+				048E2C1526A5F079009AEB13 /* CityNetworkManager.swift */,
 			);
 			path = CityWeb;
 			sourceTree = "<group>";
 		};
-		048E2BB626A5B4D7009AEB13 /* AuthChoice */ = {
+		048E2C1826A5F0A0009AEB13 /* Cities */ = {
 			isa = PBXGroup;
 			children = (
-				048E2BB826A5B4F2009AEB13 /* AuthChoiseContainer.swift */,
-				048E2BB926A5B4F2009AEB13 /* AuthChoiseInteractor.swift */,
-				048E2BBD26A5B4F3009AEB13 /* AuthChoisePresenter.swift */,
-				048E2BBA26A5B4F2009AEB13 /* AuthChoiseProtocols.swift */,
-				048E2BBB26A5B4F2009AEB13 /* AuthChoiseRouter.swift */,
-				048E2BBC26A5B4F2009AEB13 /* AuthChoiseViewController.swift */,
-				048E2BB726A5B4F2009AEB13 /* AuthManager.swift */,
+				048E2C1926A5F0C1009AEB13 /* ViewController.swift */,
+				048E2C1D26A5F0DE009AEB13 /* CitiesServiceHelper.swift */,
+				048E2C2026A5F0F6009AEB13 /* CityServiceModel.swift */,
+				048E2C2326A5F10E009AEB13 /* TableViewCell.swift */,
+				048E2C2626A5F12D009AEB13 /* CitiesProtocols.swift */,
+				048E2C2926A5F149009AEB13 /* CitiesPresenter.swift */,
+				048E2C2C26A5F178009AEB13 /* CitiesInteractor.swift */,
+				048E2C2F26A5F18F009AEB13 /* CitiesModuleContainer.swift */,
+				048E2C3226A5F1D7009AEB13 /* CitiesRouter.swift */,
+				048E2C3526A5F1F4009AEB13 /* CitiesManager.swift */,
 			);
-			path = AuthChoice;
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		048E2C4626A5F2A5009AEB13 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				048E2C4726A5F2B8009AEB13 /* MapPresenter.swift */,
+				048E2C4826A5F2B8009AEB13 /* MapRouter.swift */,
+				048E2C4926A5F2B8009AEB13 /* MapViewController.swift */,
+				048E2C4A26A5F2B8009AEB13 /* MapProtocols.swift */,
+				048E2C4B26A5F2B8009AEB13 /* MapInteractor.swift */,
+				048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		40ED5CA65B78DEB85F57D8E6 /* Frameworks */ = {
@@ -370,46 +370,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048E2B4B26A5A4D3009AEB13 /* ProfileRouter.swift in Sources */,
-				048E2B5E26A5A4E9009AEB13 /* CitiesRouter.swift in Sources */,
-				048E2B7126A5A50A009AEB13 /* CityWebContainer.swift in Sources */,
-				048E2B6F26A5A50A009AEB13 /* CityWebViewController.swift in Sources */,
-				048E2B4A26A5A4D3009AEB13 /* ProfileContainer.swift in Sources */,
-				048E2BC026A5B4F3009AEB13 /* AuthChoiseInteractor.swift in Sources */,
-				048E2B7426A5A50A009AEB13 /* CityWebRouter.swift in Sources */,
-				048E2B3F26A5A4BE009AEB13 /* MapRouter.swift in Sources */,
+				048E2BFD26A5EF21009AEB13 /* AuthChoiceViewController.swift in Sources */,
+				048E2C2726A5F12D009AEB13 /* CitiesProtocols.swift in Sources */,
+				048E2C3E26A5F263009AEB13 /* ProfilePresenter.swift in Sources */,
+				048E2BFE26A5EF21009AEB13 /* AuthChoiceProtocols.swift in Sources */,
+				048E2C0426A5EFA7009AEB13 /* AuthManager.swift in Sources */,
+				048E2C1E26A5F0DE009AEB13 /* CitiesServiceHelper.swift in Sources */,
+				048E2C4126A5F263009AEB13 /* ProfileProtocols.swift in Sources */,
+				048E2BFC26A5EF21009AEB13 /* AuthChoiceRouter.swift in Sources */,
+				048E2C0E26A5F023009AEB13 /* CityWebRouter.swift in Sources */,
+				048E2C4226A5F263009AEB13 /* ProfileInteractor.swift in Sources */,
+				048E2C1626A5F079009AEB13 /* CityNetworkManager.swift in Sources */,
+				048E2C1A26A5F0C1009AEB13 /* ViewController.swift in Sources */,
+				048E2C1026A5F023009AEB13 /* CityWebProtocols.swift in Sources */,
+				048E2C3F26A5F263009AEB13 /* ProfileRouter.swift in Sources */,
+				048E2C0D26A5F023009AEB13 /* CityWebPresenter.swift in Sources */,
 				048E2B1A26A5A31E009AEB13 /* AppDelegate.swift in Sources */,
-				048E2B6426A5A4E9009AEB13 /* CitiesInteractor.swift in Sources */,
 				048E2BC726A5C5FF009AEB13 /* ProfileManager.swift in Sources */,
-				048E2B5C26A5A4E9009AEB13 /* CitiesModuleContainer.swift in Sources */,
-				048E2B7026A5A50A009AEB13 /* CityWebProtocols.swift in Sources */,
-				048E2BC126A5B4F3009AEB13 /* AuthChoiseProtocols.swift in Sources */,
-				048E2B3D26A5A4BE009AEB13 /* MapProtocols.swift in Sources */,
-				048E2B4D26A5A4D3009AEB13 /* ProfileInteractor.swift in Sources */,
-				048E2BC226A5B4F3009AEB13 /* AuthChoiseRouter.swift in Sources */,
-				048E2B4026A5A4BE009AEB13 /* MapViewController.swift in Sources */,
-				048E2B6326A5A4E9009AEB13 /* CitiesManager.swift in Sources */,
+				048E2C4E26A5F2B8009AEB13 /* MapRouter.swift in Sources */,
+				048E2C3626A5F1F4009AEB13 /* CitiesManager.swift in Sources */,
+				048E2C1126A5F023009AEB13 /* CityWebInteractor.swift in Sources */,
 				048E2B1C26A5A31E009AEB13 /* SceneDelegate.swift in Sources */,
-				048E2B7226A5A50A009AEB13 /* CityWebInteractor.swift in Sources */,
-				048E2BBF26A5B4F3009AEB13 /* AuthChoiseContainer.swift in Sources */,
-				048E2B5B26A5A4E9009AEB13 /* CitiesPresenter.swift in Sources */,
-				048E2B3C26A5A4BE009AEB13 /* MapContainer.swift in Sources */,
-				048E2BC326A5B4F3009AEB13 /* AuthChoiseViewController.swift in Sources */,
-				048E2B3E26A5A4BE009AEB13 /* MapInteractor.swift in Sources */,
-				048E2B5F26A5A4E9009AEB13 /* CitiesServiceHelper.swift in Sources */,
-				048E2B6E26A5A50A009AEB13 /* CityNetworkManager.swift in Sources */,
-				048E2B3B26A5A4BE009AEB13 /* MapPresenter.swift in Sources */,
-				048E2B4E26A5A4D3009AEB13 /* ProfileViewController.swift in Sources */,
-				048E2B4926A5A4D3009AEB13 /* ProfileProtocols.swift in Sources */,
+				048E2C2126A5F0F6009AEB13 /* CityServiceModel.swift in Sources */,
+				048E2C0F26A5F023009AEB13 /* CityWebViewController.swift in Sources */,
+				048E2C4D26A5F2B8009AEB13 /* MapPresenter.swift in Sources */,
+				048E2C3326A5F1D7009AEB13 /* CitiesRouter.swift in Sources */,
+				048E2C0026A5EF21009AEB13 /* AuthChoiceContainer.swift in Sources */,
+				048E2C4326A5F263009AEB13 /* ProfileContainer.swift in Sources */,
+				048E2C4F26A5F2B8009AEB13 /* MapViewController.swift in Sources */,
+				048E2C5026A5F2B8009AEB13 /* MapProtocols.swift in Sources */,
+				048E2BFB26A5EF21009AEB13 /* AuthChoicePresenter.swift in Sources */,
+				048E2BFF26A5EF21009AEB13 /* AuthChoiceInteractor.swift in Sources */,
+				048E2C1226A5F023009AEB13 /* CityWebContainer.swift in Sources */,
+				048E2C3026A5F18F009AEB13 /* CitiesModuleContainer.swift in Sources */,
+				048E2C5126A5F2B8009AEB13 /* MapInteractor.swift in Sources */,
+				048E2C2426A5F10E009AEB13 /* TableViewCell.swift in Sources */,
+				048E2C2A26A5F149009AEB13 /* CitiesPresenter.swift in Sources */,
+				048E2C4026A5F263009AEB13 /* ProfileViewController.swift in Sources */,
+				048E2C2D26A5F178009AEB13 /* CitiesInteractor.swift in Sources */,
+				048E2C5226A5F2B8009AEB13 /* MapContainer.swift in Sources */,
 				048E2BCA26A5D883009AEB13 /* TabBarContainer.swift in Sources */,
-				048E2BBE26A5B4F3009AEB13 /* AuthManager.swift in Sources */,
-				048E2B6026A5A4E9009AEB13 /* ViewController.swift in Sources */,
-				048E2B5D26A5A4E9009AEB13 /* CitiesProtocols.swift in Sources */,
-				048E2B7326A5A50A009AEB13 /* CityWebPresenter.swift in Sources */,
-				048E2B6126A5A4E9009AEB13 /* CityServiceModel.swift in Sources */,
-				048E2BC426A5B4F3009AEB13 /* AuthChoisePresenter.swift in Sources */,
-				048E2B4C26A5A4D3009AEB13 /* ProfilePresenter.swift in Sources */,
-				048E2B6226A5A4E9009AEB13 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
