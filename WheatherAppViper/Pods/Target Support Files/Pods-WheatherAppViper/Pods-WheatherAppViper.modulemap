@@ -1,6 +1,0 @@
-framework module Pods_WheatherAppViper {
-  umbrella header "Pods-WheatherAppViper-umbrella.h"
-
-  export *
-  module * { export * }
-}
