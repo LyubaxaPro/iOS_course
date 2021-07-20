@@ -49,6 +49,15 @@
 		048E2C5026A5F2B8009AEB13 /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4A26A5F2B8009AEB13 /* MapProtocols.swift */; };
 		048E2C5126A5F2B8009AEB13 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4B26A5F2B8009AEB13 /* MapInteractor.swift */; };
 		048E2C5226A5F2B8009AEB13 /* MapContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */; };
+		048E2C5C26A6C9A9009AEB13 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5626A6C9A8009AEB13 /* SignUpPresenter.swift */; };
+		048E2C5D26A6C9A9009AEB13 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5726A6C9A8009AEB13 /* SignUpRouter.swift */; };
+		048E2C5E26A6C9A9009AEB13 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5826A6C9A8009AEB13 /* SignUpViewController.swift */; };
+		048E2C5F26A6C9A9009AEB13 /* SignUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5926A6C9A8009AEB13 /* SignUpProtocols.swift */; };
+		048E2C6026A6C9A9009AEB13 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5A26A6C9A8009AEB13 /* SignUpInteractor.swift */; };
+		048E2C6126A6C9A9009AEB13 /* SignUpContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C5B26A6C9A8009AEB13 /* SignUpContainer.swift */; };
+		048E2C6926A6D305009AEB13 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C6826A6D305009AEB13 /* UserInfo.swift */; };
+		048E2C7226A6DA43009AEB13 /* SignUpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C7126A6DA43009AEB13 /* SignUpManager.swift */; };
+		048E2C7526A6E258009AEB13 /* UserInfoConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C7426A6E258009AEB13 /* UserInfoConverter.swift */; };
 		76A8B65C025130CAED08D07B /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +106,15 @@
 		048E2C4A26A5F2B8009AEB13 /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = "<group>"; };
 		048E2C4B26A5F2B8009AEB13 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
 		048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContainer.swift; sourceTree = "<group>"; };
+		048E2C5626A6C9A8009AEB13 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		048E2C5726A6C9A8009AEB13 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		048E2C5826A6C9A8009AEB13 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		048E2C5926A6C9A8009AEB13 /* SignUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpProtocols.swift; sourceTree = "<group>"; };
+		048E2C5A26A6C9A8009AEB13 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		048E2C5B26A6C9A8009AEB13 /* SignUpContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContainer.swift; sourceTree = "<group>"; };
+		048E2C6826A6D305009AEB13 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		048E2C7126A6DA43009AEB13 /* SignUpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpManager.swift; sourceTree = "<group>"; };
+		048E2C7426A6E258009AEB13 /* UserInfoConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoConverter.swift; sourceTree = "<group>"; };
 		64068A6236FE1A6123F67665 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		C2AE75BC36BD370BC43D7588 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +153,8 @@
 		048E2B1826A5A31E009AEB13 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				048E2C6B26A6D3D9009AEB13 /* Models */,
+				048E2C5526A6C97E009AEB13 /* SignUp */,
 				048E2C4626A5F2A5009AEB13 /* Map */,
 				048E2C1826A5F0A0009AEB13 /* Cities */,
 				048E2C0626A5F00C009AEB13 /* CityWeb */,
@@ -220,6 +240,29 @@
 				048E2C4C26A5F2B8009AEB13 /* MapContainer.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		048E2C5526A6C97E009AEB13 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				048E2C5626A6C9A8009AEB13 /* SignUpPresenter.swift */,
+				048E2C5726A6C9A8009AEB13 /* SignUpRouter.swift */,
+				048E2C5826A6C9A8009AEB13 /* SignUpViewController.swift */,
+				048E2C5926A6C9A8009AEB13 /* SignUpProtocols.swift */,
+				048E2C5A26A6C9A8009AEB13 /* SignUpInteractor.swift */,
+				048E2C5B26A6C9A8009AEB13 /* SignUpContainer.swift */,
+				048E2C7126A6DA43009AEB13 /* SignUpManager.swift */,
+				048E2C7426A6E258009AEB13 /* UserInfoConverter.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		048E2C6B26A6D3D9009AEB13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				048E2C6826A6D305009AEB13 /* UserInfo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		40ED5CA65B78DEB85F57D8E6 /* Frameworks */ = {
@@ -374,23 +417,30 @@
 				048E2C2726A5F12D009AEB13 /* CitiesProtocols.swift in Sources */,
 				048E2C3E26A5F263009AEB13 /* ProfilePresenter.swift in Sources */,
 				048E2BFE26A5EF21009AEB13 /* AuthChoiceProtocols.swift in Sources */,
+				048E2C5E26A6C9A9009AEB13 /* SignUpViewController.swift in Sources */,
 				048E2C0426A5EFA7009AEB13 /* AuthManager.swift in Sources */,
 				048E2C1E26A5F0DE009AEB13 /* CitiesServiceHelper.swift in Sources */,
 				048E2C4126A5F263009AEB13 /* ProfileProtocols.swift in Sources */,
 				048E2BFC26A5EF21009AEB13 /* AuthChoiceRouter.swift in Sources */,
+				048E2C5C26A6C9A9009AEB13 /* SignUpPresenter.swift in Sources */,
 				048E2C0E26A5F023009AEB13 /* CityWebRouter.swift in Sources */,
 				048E2C4226A5F263009AEB13 /* ProfileInteractor.swift in Sources */,
 				048E2C1626A5F079009AEB13 /* CityNetworkManager.swift in Sources */,
 				048E2C1A26A5F0C1009AEB13 /* ViewController.swift in Sources */,
+				048E2C7526A6E258009AEB13 /* UserInfoConverter.swift in Sources */,
 				048E2C1026A5F023009AEB13 /* CityWebProtocols.swift in Sources */,
+				048E2C7226A6DA43009AEB13 /* SignUpManager.swift in Sources */,
 				048E2C3F26A5F263009AEB13 /* ProfileRouter.swift in Sources */,
 				048E2C0D26A5F023009AEB13 /* CityWebPresenter.swift in Sources */,
 				048E2B1A26A5A31E009AEB13 /* AppDelegate.swift in Sources */,
+				048E2C6926A6D305009AEB13 /* UserInfo.swift in Sources */,
 				048E2BC726A5C5FF009AEB13 /* ProfileManager.swift in Sources */,
+				048E2C6126A6C9A9009AEB13 /* SignUpContainer.swift in Sources */,
 				048E2C4E26A5F2B8009AEB13 /* MapRouter.swift in Sources */,
 				048E2C3626A5F1F4009AEB13 /* CitiesManager.swift in Sources */,
 				048E2C1126A5F023009AEB13 /* CityWebInteractor.swift in Sources */,
 				048E2B1C26A5A31E009AEB13 /* SceneDelegate.swift in Sources */,
+				048E2C5F26A6C9A9009AEB13 /* SignUpProtocols.swift in Sources */,
 				048E2C2126A5F0F6009AEB13 /* CityServiceModel.swift in Sources */,
 				048E2C0F26A5F023009AEB13 /* CityWebViewController.swift in Sources */,
 				048E2C4D26A5F2B8009AEB13 /* MapPresenter.swift in Sources */,
@@ -399,6 +449,7 @@
 				048E2C4326A5F263009AEB13 /* ProfileContainer.swift in Sources */,
 				048E2C4F26A5F2B8009AEB13 /* MapViewController.swift in Sources */,
 				048E2C5026A5F2B8009AEB13 /* MapProtocols.swift in Sources */,
+				048E2C5D26A6C9A9009AEB13 /* SignUpRouter.swift in Sources */,
 				048E2BFB26A5EF21009AEB13 /* AuthChoicePresenter.swift in Sources */,
 				048E2BFF26A5EF21009AEB13 /* AuthChoiceInteractor.swift in Sources */,
 				048E2C1226A5F023009AEB13 /* CityWebContainer.swift in Sources */,
@@ -409,6 +460,7 @@
 				048E2C4026A5F263009AEB13 /* ProfileViewController.swift in Sources */,
 				048E2C2D26A5F178009AEB13 /* CitiesInteractor.swift in Sources */,
 				048E2C5226A5F2B8009AEB13 /* MapContainer.swift in Sources */,
+				048E2C6026A6C9A9009AEB13 /* SignUpInteractor.swift in Sources */,
 				048E2BCA26A5D883009AEB13 /* TabBarContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

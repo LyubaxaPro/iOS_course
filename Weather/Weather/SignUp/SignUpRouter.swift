@@ -1,16 +1,10 @@
 import UIKit
 
-final class AuthChoiseRouter {
-    weak var sourceViewController: UIViewController?
+final class SignUpRouter {
+     weak var sourceViewController: UIViewController?
 }
 
-extension AuthChoiseRouter: AuthChoiseRouterInput {
-    
-    func signUp() {
-        let signUpContainer = SignUpContainer.assemble()
-        sourceViewController?.navigationController?.pushViewController(signUpContainer.viewController, animated: true)
-    }
-    
+extension SignUpRouter: SignUpRouterInput {
     func showAlert(error: Error, description: String) {
         let alert = UIAlertController(title: "Error", message: description, preferredStyle: .alert)
         let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
@@ -19,7 +13,7 @@ extension AuthChoiseRouter: AuthChoiseRouterInput {
         alert.addAction(ok)
         sourceViewController?.present(alert, animated: true, completion: nil)
     }
-    
+
     func showCities() {
         let tabBarViewController = TabBarContainer.getTabBar()
         let navigationController = UINavigationController(rootViewController: tabBarViewController)

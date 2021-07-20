@@ -8,6 +8,7 @@ final class AuthChoiseViewController: UIViewController {
     private let signInButton = UIButton()
     private let signUpButton = UIButton()
     private let passwordIcon = UIImageView()
+    private let signupButton = UIButton()
 
     init(output: AuthChoiseViewOutput) {
         self.output = output
@@ -24,22 +25,18 @@ final class AuthChoiseViewController: UIViewController {
         setupEmail()
         setupPassword()
         setupSignInButton()
-        setupSignUpButton()
+        setupSignupButton()
+        //setupSignUpButton()
         setupPasswordIcon()
         view.backgroundColor = .white
-        
-        view.addSubview(emailField)
-        view.addSubview(passwordField)
-        view.addSubview(signInButton)
-        view.addSubview(signUpButton)
-        view.addSubview(passwordIcon)
     }
     
     private func setupEmail() {
-        emailField.placeholder = "Email"
+        emailField.placeholder = " Email"
         emailField.textColor = .black
         emailField.layer.borderWidth = 1
         emailField.layer.borderColor = UIColor.systemGray.cgColor
+        view.addSubview(emailField)
     }
     
     private func setupSignInButton() {
@@ -47,20 +44,30 @@ final class AuthChoiseViewController: UIViewController {
         signInButton.setTitle("Sign in", for: .normal)
         signInButton.setTitleColor(.white, for: .normal)
         signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
+        view.addSubview(signInButton)
     }
     
-    private func setupSignUpButton() {
-        signUpButton.backgroundColor = .systemGray
-        signUpButton.setTitle("Sign up", for: .normal)
-        signUpButton.setTitleColor(.white, for: .normal)
-        signUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
+//    private func setupSignUpButton() {
+//        signUpButton.backgroundColor = .systemGray
+//        signUpButton.setTitle("Sign up", for: .normal)
+//        signUpButton.setTitleColor(.white, for: .normal)
+//        signUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
+//    }
+    
+    private func setupSignupButton() {
+        signupButton.backgroundColor = .systemGray
+        signupButton.setTitle("Sign up", for: .normal)
+        signupButton.setTitleColor(.white, for: .normal)
+        signupButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
+        view.addSubview(signupButton)
     }
     
     private func setupPassword() {
-        passwordField.placeholder = "Password"
+        passwordField.placeholder = " Password"
         passwordField.isSecureTextEntry = true
         passwordField.layer.borderWidth = 1
         passwordField.layer.borderColor = UIColor.systemGray.cgColor
+        view.addSubview(passwordField)
     }
     
     private func setupPasswordIcon(){
@@ -70,6 +77,7 @@ final class AuthChoiseViewController: UIViewController {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPasswordIcon))
         passwordIcon.addGestureRecognizer(gestureRecognizer)
+        view.addSubview(passwordIcon)
     }
     
     override func viewDidLayoutSubviews() {
@@ -100,7 +108,7 @@ final class AuthChoiseViewController: UIViewController {
             .left(view.pin.safeArea.left + 15)
             .height(40)
         
-        signUpButton.pin
+        signupButton.pin
             .below(of: signInButton)
             .marginTop(5)
             .right(view.pin.safeArea.right + 15)
@@ -120,17 +128,11 @@ final class AuthChoiseViewController: UIViewController {
     }
     
     @objc private func didTapSignUp() {
-        guard let email = emailField.text,
-              !email.isEmpty,
-              let password = passwordField.text,
-              !password.isEmpty else {
-            output.didReceiveError(error: NetworkError.unexpected, description: "miss data")
-            return
-        }
-        output.didTapSignUp(email: email, password: password)
+        output.didTapSignUp(email: emailField.text ?? "", password: passwordField.text ?? "")
         emailField.text = ""
         passwordField.text = ""
     }
+
     
     @objc private func didTapPasswordIcon() {
         passwordField.isSecureTextEntry = !passwordField.isSecureTextEntry
@@ -142,14 +144,7 @@ final class AuthChoiseViewController: UIViewController {
     }
     
     @objc private func didTapSignIn() {
-        guard let email = emailField.text,
-              !email.isEmpty,
-              let password = passwordField.text,
-              !password.isEmpty else {
-            output.didReceiveError(error: NetworkError.unexpected, description: "miss data")
-            return
-        }
-        output.didTapSignIn(email: email, password: password)
+        output.didTapSignIn(email: emailField.text ?? "", password: passwordField.text ?? "")
         emailField.text = ""
         passwordField.text = ""
     }

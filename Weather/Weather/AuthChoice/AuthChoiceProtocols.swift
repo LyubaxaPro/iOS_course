@@ -13,7 +13,6 @@ protocol AuthChoiseViewInput: class {
 protocol AuthChoiseViewOutput: class {
     func didTapSignUp(email: String, password: String)
     func didTapSignIn(email: String, password: String)
-    func didReceiveError(error: Error, description: String)
 }
 
 protocol AuthChoiseInteractorInput: class {
@@ -29,4 +28,5 @@ protocol AuthChoiseInteractorOutput: class {
 protocol AuthChoiseRouterInput: class {
     func showAlert(error: Error, description: String)
     func showCities()
+    func signUp()
 }
