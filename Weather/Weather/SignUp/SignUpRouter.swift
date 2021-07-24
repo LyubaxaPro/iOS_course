@@ -6,12 +6,7 @@ final class SignUpRouter {
 
 extension SignUpRouter: SignUpRouterInput {
     func showAlert(error: Error, description: String) {
-        let alert = UIAlertController(title: "Error", message: description, preferredStyle: .alert)
-        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-            alert.dismiss(animated: true, completion: nil)
-         })
-        alert.addAction(ok)
-        sourceViewController?.present(alert, animated: true, completion: nil)
+        sourceViewController?.present(AlertManager.getAlert(error: error, description: description), animated: true, completion: nil)
     }
 
     func showCities() {

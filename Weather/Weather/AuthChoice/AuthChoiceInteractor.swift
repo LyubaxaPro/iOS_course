@@ -16,16 +16,4 @@ extension AuthChoiseInteractor: AuthChoiseInteractorInput {
             }
         }
     }
-    
-    func signUp(email: String, password: String) {
-//        guard checkEmail(email: email) else {
-//            output?.didReceiveErrorInteractor(error: NetworkError.unexpected, description: "Not correct email")
-//            return
-//        }
-        authManager.signUp(email: email, password: password) {[weak self] ( error ) in
-            if error != nil {
-                self?.output?.didReceiveErrorInteractor(error: NetworkError.unexpected, description: "Sign up error")
-            }
-        }
-    }
 }

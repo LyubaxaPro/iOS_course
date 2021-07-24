@@ -17,6 +17,10 @@ extension AuthChoisePresenter: AuthChoiseModuleInput {
 }
 
 extension AuthChoisePresenter: AuthChoiseViewOutput {
+    func didTapForgotPassword() {
+        router.didTapForgotPassword()
+    }
+    
     func didTapSignIn(email: String, password: String) {
         if (email.isEmpty || password.isEmpty) {
             router.showAlert(error: NetworkError.unexpected, description: "miss data")
@@ -25,7 +29,7 @@ extension AuthChoisePresenter: AuthChoiseViewOutput {
         interactor.signIn(email: email, password: password)
     }
     
-    func didTapSignUp(email: String, password: String) {
+    func didTapSignUp() {
         router.signUp()
     }
     

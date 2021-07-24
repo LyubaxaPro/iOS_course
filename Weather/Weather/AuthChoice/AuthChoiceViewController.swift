@@ -9,6 +9,7 @@ final class AuthChoiseViewController: UIViewController {
     private let signUpButton = UIButton()
     private let passwordIcon = UIImageView()
     private let signupButton = UIButton()
+    private let forgotPasswordLabel = UILabel()
 
     init(output: AuthChoiseViewOutput) {
         self.output = output
@@ -26,8 +27,8 @@ final class AuthChoiseViewController: UIViewController {
         setupPassword()
         setupSignInButton()
         setupSignupButton()
-        //setupSignUpButton()
         setupPasswordIcon()
+        setupForgotPasswordLabel()
         view.backgroundColor = .white
     }
     
@@ -46,13 +47,6 @@ final class AuthChoiseViewController: UIViewController {
         signInButton.addTarget(self, action: #selector(didTapSignIn), for: .touchUpInside)
         view.addSubview(signInButton)
     }
-    
-//    private func setupSignUpButton() {
-//        signUpButton.backgroundColor = .systemGray
-//        signUpButton.setTitle("Sign up", for: .normal)
-//        signUpButton.setTitleColor(.white, for: .normal)
-//        signUpButton.addTarget(self, action: #selector(didTapSignUp), for: .touchUpInside)
-//    }
     
     private func setupSignupButton() {
         signupButton.backgroundColor = .systemGray
@@ -78,6 +72,17 @@ final class AuthChoiseViewController: UIViewController {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapPasswordIcon))
         passwordIcon.addGestureRecognizer(gestureRecognizer)
         view.addSubview(passwordIcon)
+    }
+    
+    private func setupForgotPasswordLabel() {
+        forgotPasswordLabel.text = "Forgot your password?"
+        forgotPasswordLabel.textColor = .blue
+        forgotPasswordLabel.font = .systemFont(ofSize: 16, weight: .semibold)
+        forgotPasswordLabel.isUserInteractionEnabled = true
+        let gestureRecognizer = UITapGestureRecognizer()
+        gestureRecognizer.addTarget(self, action: #selector(didTapForgotPassword))
+        forgotPasswordLabel.addGestureRecognizer(gestureRecognizer)
+        view.addSubview(forgotPasswordLabel)
     }
     
     override func viewDidLayoutSubviews() {
@@ -108,9 +113,16 @@ final class AuthChoiseViewController: UIViewController {
             .left(view.pin.safeArea.left + 15)
             .height(40)
         
-        signupButton.pin
+        
+        forgotPasswordLabel.pin
             .below(of: signInButton)
             .marginTop(5)
+            .right(view.pin.safeArea.right + 10)
+            .height(40)
+            .sizeToFit()
+        
+        signupButton.pin
+            .bottom(view.pin.safeArea.bottom + 20)
             .right(view.pin.safeArea.right + 15)
             .left(view.pin.safeArea.left + 15)
             .height(40)
@@ -127,14 +139,14 @@ final class AuthChoiseViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @objc private func didTapSignUp() {
-        output.didTapSignUp(email: emailField.text ?? "", password: passwordField.text ?? "")
-        emailField.text = ""
-        passwordField.text = ""
+    @objc
+    private func didTapSignUp() {
+        output.didTapSignUp()
     }
 
     
-    @objc private func didTapPasswordIcon() {
+    @objc
+    private func didTapPasswordIcon() {
         passwordField.isSecureTextEntry = !passwordField.isSecureTextEntry
         if (passwordField.isSecureTextEntry){
             passwordIcon.alpha = 0.1
@@ -143,10 +155,16 @@ final class AuthChoiseViewController: UIViewController {
         }
     }
     
-    @objc private func didTapSignIn() {
+    @objc
+    private func didTapSignIn() {
         output.didTapSignIn(email: emailField.text ?? "", password: passwordField.text ?? "")
         emailField.text = ""
         passwordField.text = ""
+    }
+    
+    @objc
+    private func didTapForgotPassword() {
+        output.didTapForgotPassword()
     }
 }
 
