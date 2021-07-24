@@ -15,4 +15,16 @@ extension ProfileInteractor: ProfileInteractorInput {
             }
         }
     }
+    
+    
+    func getUserData() {
+        profileManager.getUserData() {[weak self] (result) in
+            switch result {
+            case .failure(let error):
+                self?.output?.didReceiveErrorInteractor(error: error, description: "Network error")
+            case .success(let model):
+                self?.output?.setUserData(userModel: model)
+            }
+        }
+    }
 }

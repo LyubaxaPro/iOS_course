@@ -5,14 +5,31 @@ final class UserInfoConverter {
     enum Key: String{
         case firstname
         case lastname
-        case indentifier
+        case identifier
     }
     
-    static func dict(from userModel: UserModel) -> [String: Any] {
+    static func dict(from userModel: UserModel) -> [String : Any] {
         var data: [String : Any] = [:]
         data[Key.firstname.rawValue] = userModel.firstname
         data[Key.lastname.rawValue] = userModel.lastname
-        data[Key.indentifier.rawValue] = userModel.indentifier
+        data[Key.identifier.rawValue] = userModel.identifier
         return data
+    }
+    
+    static func userModel(from data: [String : Any]) -> UserModel? {
+        guard let firstname = data[Key.firstname.rawValue] as? String else {
+            return nil
+        }
+        
+        guard let lastname = data[Key.lastname.rawValue] as? String else {
+            return nil
+        }
+        
+        guard let identifier = data[Key.identifier.rawValue] as? String else {
+            return nil
+        }
+       
+        let user = UserModel(firstname: firstname, lastname: lastname, identifier: identifier)
+        return user
     }
 }

@@ -10,6 +10,6 @@ struct UserInfo{
 struct UserModel {
     let firstname: String
     let lastname: String
-    let indentifier: String
+    let identifier: String
 }
 

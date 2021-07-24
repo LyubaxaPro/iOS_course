@@ -22,7 +22,7 @@ final class FirebaseSignUpManager: SignUpManagerDescription {
                     complition(error)
                     return
                 }
-                let userModel = UserModel(firstname: userInfo.firstname, lastname: userInfo.lastname, indentifier: uid)
+                let userModel = UserModel(firstname: userInfo.firstname, lastname: userInfo.lastname, identifier: uid)
                 let data = UserInfoConverter.dict(from: userModel)
                 self.database.collection("users").addDocument(data: data) { (error) in
                     if error != nil {

@@ -25,10 +25,6 @@ extension AuthChoisePresenter: AuthChoiseViewOutput {
         interactor.signIn(email: email, password: password)
     }
     
-//    func didTapSignUp(email: String, password: String) {
-//        interactor.signUp(email: email, password: password)
-//    }
-    
     func didTapSignUp(email: String, password: String) {
         router.signUp()
     }
