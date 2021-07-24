@@ -122,7 +122,8 @@ final class AuthChoiseViewController: UIViewController {
             .sizeToFit()
         
         signupButton.pin
-            .bottom(view.pin.safeArea.bottom + 20)
+            .below(of: forgotPasswordLabel)
+            .marginTop(50)
             .right(view.pin.safeArea.right + 15)
             .left(view.pin.safeArea.left + 15)
             .height(40)
