@@ -66,6 +66,10 @@
 		048E2C8926AC30F1009AEB13 /* ForgotPasswordContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C8326AC30F1009AEB13 /* ForgotPasswordContainer.swift */; };
 		048E2C8D26AC3C4D009AEB13 /* ForgotPasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C8C26AC3C4D009AEB13 /* ForgotPasswordManager.swift */; };
 		048E2C9026AC3E19009AEB13 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E2C8F26AC3E19009AEB13 /* AlertManager.swift */; };
+		04E0622926CFE8FD0051A7E1 /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0622826CFE8FD0051A7E1 /* PushManager.swift */; };
+		04E0622D26CFE9160051A7E1 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0622C26CFE9160051A7E1 /* DeeplinkManager.swift */; };
+		04E0623026CFE9380051A7E1 /* push.apns in Resources */ = {isa = PBXBuildFile; fileRef = 04E0622F26CFE9380051A7E1 /* push.apns */; };
+		04E0623326CFE95F0051A7E1 /* PushStatusBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E0623226CFE95F0051A7E1 /* PushStatusBannerView.swift */; };
 		76A8B65C025130CAED08D07B /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +135,10 @@
 		048E2C8326AC30F1009AEB13 /* ForgotPasswordContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordContainer.swift; sourceTree = "<group>"; };
 		048E2C8C26AC3C4D009AEB13 /* ForgotPasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordManager.swift; sourceTree = "<group>"; };
 		048E2C8F26AC3E19009AEB13 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		04E0622826CFE8FD0051A7E1 /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
+		04E0622C26CFE9160051A7E1 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		04E0622F26CFE9380051A7E1 /* push.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = push.apns; sourceTree = "<group>"; };
+		04E0623226CFE95F0051A7E1 /* PushStatusBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushStatusBannerView.swift; sourceTree = "<group>"; };
 		64068A6236FE1A6123F67665 /* Pods-Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.release.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.release.xcconfig"; sourceTree = "<group>"; };
 		C2AE75BC36BD370BC43D7588 /* Pods-Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weather.debug.xcconfig"; path = "Target Support Files/Pods-Weather/Pods-Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		F4EE36B636DE8231DE7A98BD /* Pods_Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +177,7 @@
 		048E2B1826A5A31E009AEB13 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				04E0622726CFE8E40051A7E1 /* PushManager */,
 				048E2C7D26AC30CB009AEB13 /* ForgotPassword */,
 				048E2C6B26A6D3D9009AEB13 /* Models */,
 				048E2C5526A6C97E009AEB13 /* SignUp */,
@@ -243,6 +252,7 @@
 				048E2C2F26A5F18F009AEB13 /* CitiesModuleContainer.swift */,
 				048E2C3226A5F1D7009AEB13 /* CitiesRouter.swift */,
 				048E2C3526A5F1F4009AEB13 /* CitiesManager.swift */,
+				04E0623226CFE95F0051A7E1 /* PushStatusBannerView.swift */,
 			);
 			path = Cities;
 			sourceTree = "<group>";
@@ -295,6 +305,16 @@
 				048E2C8C26AC3C4D009AEB13 /* ForgotPasswordManager.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		04E0622726CFE8E40051A7E1 /* PushManager */ = {
+			isa = PBXGroup;
+			children = (
+				04E0622826CFE8FD0051A7E1 /* PushManager.swift */,
+				04E0622C26CFE9160051A7E1 /* DeeplinkManager.swift */,
+				04E0622F26CFE9380051A7E1 /* push.apns */,
+			);
+			path = PushManager;
 			sourceTree = "<group>";
 		};
 		40ED5CA65B78DEB85F57D8E6 /* Frameworks */ = {
@@ -375,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				048E2BB326A5B0F7009AEB13 /* GoogleService-Info.plist in Resources */,
+				04E0623026CFE9380051A7E1 /* push.apns in Resources */,
 				048E2B2326A5A321009AEB13 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,16 +500,19 @@
 				048E2C5F26A6C9A9009AEB13 /* SignUpProtocols.swift in Sources */,
 				048E2C2126A5F0F6009AEB13 /* CityServiceModel.swift in Sources */,
 				048E2C0F26A5F023009AEB13 /* CityWebViewController.swift in Sources */,
+				04E0623326CFE95F0051A7E1 /* PushStatusBannerView.swift in Sources */,
 				048E2C4D26A5F2B8009AEB13 /* MapPresenter.swift in Sources */,
 				048E2C3326A5F1D7009AEB13 /* CitiesRouter.swift in Sources */,
 				048E2C0026A5EF21009AEB13 /* AuthChoiceContainer.swift in Sources */,
 				048E2C8926AC30F1009AEB13 /* ForgotPasswordContainer.swift in Sources */,
 				048E2C4326A5F263009AEB13 /* ProfileContainer.swift in Sources */,
+				04E0622926CFE8FD0051A7E1 /* PushManager.swift in Sources */,
 				048E2C8626AC30F1009AEB13 /* ForgotPasswordViewController.swift in Sources */,
 				048E2C4F26A5F2B8009AEB13 /* MapViewController.swift in Sources */,
 				048E2C5026A5F2B8009AEB13 /* MapProtocols.swift in Sources */,
 				048E2C5D26A6C9A9009AEB13 /* SignUpRouter.swift in Sources */,
 				048E2BFB26A5EF21009AEB13 /* AuthChoicePresenter.swift in Sources */,
+				04E0622D26CFE9160051A7E1 /* DeeplinkManager.swift in Sources */,
 				048E2BFF26A5EF21009AEB13 /* AuthChoiceInteractor.swift in Sources */,
 				048E2C1226A5F023009AEB13 /* CityWebContainer.swift in Sources */,
 				048E2C3026A5F18F009AEB13 /* CitiesModuleContainer.swift in Sources */,

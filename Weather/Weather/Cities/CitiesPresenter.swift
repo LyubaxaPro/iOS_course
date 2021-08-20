@@ -8,9 +8,11 @@ final class CitiesPresenter {
     ]
     weak var view: CitiesViewInput?
     let interactor: CitiesInteractorInput
-    //массив вью моделей
+    
     private ( set ) var citiesViewModels: [CityViewModel] = []
     let router: CitiesRouterInput
+    
+    private let pushManager: PushManagerDescription = PushManager.shared
     
     init (interactor: CitiesInteractorInput, router: CitiesRouterInput){
         self.interactor = interactor
@@ -35,6 +37,9 @@ extension CitiesPresenter: CitiesViewOutput {
     
     func didLoadView() {
         interactor.load(cities: cityServiceInfos)
+        
+        pushManager.add(observer: self)
+        pushManager.requestAuth()
     }
     
     func didPullRefresh() {
@@ -64,4 +69,12 @@ extension CitiesPresenter: CitiesInteractorOutput {
         
         self.view?.reloadData()
     }
+}
+
+extension CitiesPresenter: PushStatusObserver {
+    func didChange(status: PushStatus) {
+        view?.updatePushStatusBannerView(pushStatus: status)
+    }
+    
+    
 }

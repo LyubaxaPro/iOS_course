@@ -10,6 +10,7 @@ struct CityViewModel {
 class CitiesViewController: UIViewController {
     
     private let tableView = UITableView()
+    private let pushStatusBannerView = PushStatusBannerView()
     private let output: CitiesViewOutput
     
     init (output: CitiesViewOutput) {
@@ -41,13 +42,24 @@ class CitiesViewController: UIViewController {
         tableView.separatorStyle = .none
         
         view.addSubview(tableView)
-        
+        view.addSubview(pushStatusBannerView)
+        view.backgroundColor = .white
         output.didLoadView()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        tableView.pin.all()
+        
+        pushStatusBannerView.pin
+            .bottom(view.pin.safeArea.bottom)
+            .horizontally(12)
+            .height(64)
+        
+        tableView.pin
+            .top()
+            .horizontally()
+            .above(of: pushStatusBannerView)
+        
     }
     
     @objc private func didTapAdd() {
@@ -90,5 +102,9 @@ extension CitiesViewController: CitiesViewInput {
     func reloadData() {
         tableView.refreshControl?.endRefreshing()
         self.tableView.reloadData()
+    }
+    
+    func updatePushStatusBannerView(pushStatus: PushStatus) {
+        pushStatusBannerView.update(with: pushStatus)
     }
 }

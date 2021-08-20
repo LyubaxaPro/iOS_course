@@ -14,6 +14,7 @@ protocol CitiesViewOutput: AnyObject {
 
 protocol CitiesViewInput: AnyObject {
     func reloadData()
+    func updatePushStatusBannerView(pushStatus: PushStatus)
 }
 
 protocol CitiesInteractorInput: AnyObject {
