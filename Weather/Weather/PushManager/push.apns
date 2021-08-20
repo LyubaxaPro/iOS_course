@@ -1,0 +1,12 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "Push On Simulator",
+            "body" : "You have sent it on simulator",
+            "sound" : "default"
+        }
+    },
+    "Simulator Target Bundle" : "Mail.ru.Weather",
+    "url" : "app://Weather?screen=city&name=gelen"
+}
+
