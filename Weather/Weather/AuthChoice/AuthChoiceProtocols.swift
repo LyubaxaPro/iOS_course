@@ -4,28 +4,28 @@ protocol AuthChoiseModuleInput {
     var moduleOutput: AuthChoiseModuleOutput? { get }
 }
 
-protocol AuthChoiseModuleOutput: class {
+protocol AuthChoiseModuleOutput: AnyObject {
 }
 
-protocol AuthChoiseViewInput: class {
+protocol AuthChoiseViewInput: AnyObject {
 }
 
-protocol AuthChoiseViewOutput: class {
+protocol AuthChoiseViewOutput: AnyObject {
     func didTapSignIn(email: String, password: String)
     func didTapSignUp()
     func didTapForgotPassword()
 }
 
-protocol AuthChoiseInteractorInput: class {
+protocol AuthChoiseInteractorInput: AnyObject {
     func signIn(email: String, password: String)
 }
 
-protocol AuthChoiseInteractorOutput: class {
+protocol AuthChoiseInteractorOutput: AnyObject {
     func didReceiveErrorInteractor(error: Error, description: String)
     func didSignIn()
 }
 
-protocol AuthChoiseRouterInput: class {
+protocol AuthChoiseRouterInput: AnyObject {
     func showAlert(error: Error, description: String)
     func showCities()
     func signUp()

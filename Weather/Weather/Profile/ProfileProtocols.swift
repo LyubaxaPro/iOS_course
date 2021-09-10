@@ -4,31 +4,31 @@ protocol ProfileModuleInput {
     var moduleOutput: ProfileModuleOutput? { get }
 }
 
-protocol ProfileModuleOutput: class {
+protocol ProfileModuleOutput: AnyObject {
 }
 
-protocol ProfileViewInput: class {
+protocol ProfileViewInput: AnyObject {
     func setUserData(userModel: UserModel)
 }
 
-protocol ProfileViewOutput: class {
+protocol ProfileViewOutput: AnyObject {
     func didTapSignOut()
     func viewDidLoad()
 }
 
-protocol ProfileInteractorInput: class {
+protocol ProfileInteractorInput: AnyObject {
     func signOut()
     func getUserData()
 }
 
-protocol ProfileInteractorOutput: class {
+protocol ProfileInteractorOutput: AnyObject {
     func didSignOut()
     func didReceiveErrorInteractor(error: Error, description: String)
     func setUserData(userModel: UserModel)
     
 }
 
-protocol ProfileRouterInput: class {
+protocol ProfileRouterInput: AnyObject {
     func showAlert(error: Error, description: String)
     func signOut()
 }

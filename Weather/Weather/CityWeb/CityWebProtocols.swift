@@ -4,26 +4,26 @@ protocol CityWebModuleInput {
     var moduleOutput: CityWebModuleOutput? { get }
 }
 
-protocol CityWebModuleOutput: class {
+protocol CityWebModuleOutput: AnyObject {
 }
 
-protocol CityWebViewInput: class {
+protocol CityWebViewInput: AnyObject {
     func loadWebView(with request: URLRequest)
 }
 
-protocol CityWebViewOutput: class {
+protocol CityWebViewOutput: AnyObject {
     func viewDidLoad()
     func didTapRefresh()
 }
 
-protocol CityWebInteractorInput: class {
+protocol CityWebInteractorInput: AnyObject {
     func getRequest(with city: String)
 }
 
-protocol CityWebInteractorOutput: class {
+protocol CityWebInteractorOutput: AnyObject {
     func request(with request: URLRequest)
     func didRecieveError(error: Error)
 }
 
-protocol CityWebRouterInput: class {
+protocol CityWebRouterInput: AnyObject {
 }

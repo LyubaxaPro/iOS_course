@@ -4,26 +4,26 @@ protocol SignUpModuleInput {
 	var moduleOutput: SignUpModuleOutput? { get }
 }
 
-protocol SignUpModuleOutput: class {
+protocol SignUpModuleOutput: AnyObject {
 }
 
-protocol SignUpViewInput: class {
+protocol SignUpViewInput: AnyObject {
 }
 
-protocol SignUpViewOutput: class {
+protocol SignUpViewOutput: AnyObject {
     func didTapSignUp(userInfo: UserInfo)
 }
 
-protocol SignUpInteractorInput: class {
+protocol SignUpInteractorInput: AnyObject {
     func signUp(userInfo: UserInfo)
 }
 
-protocol SignUpInteractorOutput: class {
+protocol SignUpInteractorOutput: AnyObject {
     func didReceiveErrorInteractor(error: Error, description: String)
     func didSignUp()
 }
 
-protocol SignUpRouterInput: class {
+protocol SignUpRouterInput: AnyObject {
     func showAlert(error: Error, description: String)
     func showCities()
 }
