@@ -99,6 +99,13 @@ extension CitiesViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension CitiesViewController: CitiesViewInput {
+    func addCities() {
+        
+        tableView.performBatchUpdates({
+            tableView.insertRows(at: [IndexPath.init(row: output.citiesViewModels.count - 1, section: 0)], with: .automatic)
+        }, completion: nil)
+    }
+    
     func reloadData() {
         tableView.refreshControl?.endRefreshing()
         self.tableView.reloadData()

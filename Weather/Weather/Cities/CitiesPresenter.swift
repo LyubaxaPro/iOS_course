@@ -55,13 +55,12 @@ extension CitiesPresenter: CitiesViewOutput {
 extension CitiesPresenter: CitiesInteractorOutput {
     func didLoad(city: CityResponse) {
         citiesViewModels.append(viewModel(from: city))
-        self.view?.reloadData()
+        self.view?.addCities()
     }
     
     func didRecieveError(error: Error) {
-        //view
+        print(error)
     }
-    
     
     func didLoad(cities: [CityResponse]) {
         
@@ -75,6 +74,4 @@ extension CitiesPresenter: PushStatusObserver {
     func didChange(status: PushStatus) {
         view?.updatePushStatusBannerView(pushStatus: status)
     }
-    
-    
 }
